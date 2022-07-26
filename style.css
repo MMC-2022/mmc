@@ -1,0 +1,34 @@
+/*
+AppBar & BottomBar color : #FEECD5
+main color : #F0E2CD
+button color : onclick => bg:#FCC877, text:#184A54 
+background color : #184A54
+
+*/
+
+*{
+	font-family: 'Popping', sans-serif;
+	font-style: normal;
+	background-color: #184A54;
+}
+
+header img{
+   height: 155px;
+	width: 158px;
+}
+
+nav a, footer a{
+	color: #FEECD5;
+}
+
+.circle{
+	border-radius: 50%;
+	margin: 0.15em;
+	font-size: 2em;
+}
+
+.fa-facebook, .fa-instagram, .fa-linkedin {
+   background-color: #FCC877;
+	padding: 0.30em 0.30em;
+	color: #184A54;
+}                                                                                             
