@@ -1,34 +1,123 @@
-/*
-AppBar & BottomBar color : #FEECD5
-main color : #F0E2CD
-button color : onclick => bg:#FCC877, text:#184A54 
-background color : #184A54
-
-*/
 
 *{
+	padding: 5px;
+	margin:0px;
 	font-family: 'Popping', sans-serif;
 	font-style: normal;
-	background-color: #184A54;
-}
+	box-sizing: border-box;
+	
 
-header img{
-   height: 155px;
-	width: 158px;
+}
+body{
+	background-color: #184A54;
+	background-image:url("images/1.png"), url("images/2.png"), url("images/2.png");
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 75%, 50%, 25%;
+	background-position: 230% -130%, 150% 15%, -18% 125% ;
+}
+header nav {
+	top: 0;
+	left:0;
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-bottom: 50px;
+}
+.header_logo img{
+   height: 120px;
+	/* position: relative; */
+
 }
 
 nav a, footer a{
 	color: #FEECD5;
 }
 
-.circle{
-	border-radius: 50%;
-	margin: 0.15em;
-	font-size: 2em;
+ul li{
+	display: inline;
+}
+ul li a {
+	/* position:relative; */
+	margin: 0 30px;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
 }
 
-.fa-facebook, .fa-instagram, .fa-linkedin {
+.MMCarticle h1{
+	color: #F0E2CD;
+	font-size:45px;
+}
+.Dayarticle h2{
+	color: #FCC877;
+	text-align: center;
+}
+.Dayarticle a{
+	color: #FCC877
+}
+.MMCarticle p,
+.Dayarticle p{
+	color : #F0E2CD;
+	font-size:18px;
+	width: 600px;
+	padding-top: 30px;
+}
+.Dayarticle p{
+	text-align: center;
+	margin: auto;
+
+}
+.Dayarticle {
+	padding-top:200px ;
+	padding-bottom: 200px;
+}
+.HomeButton a{
+	margin: 0px;
+}.HomeButton ul li {
+	padding: 5px;
+}
+.HomeButton button {
+	margin-top: 30px;
+	width: 200px;
+	border-radius: 20px;
+	border-color: #FCC877;
+	font-weight:bold ;
+	font-size: 16px;
+}
+
+.joinUs_button{
+	background-color:#FCC877 ;
+	color: #184A54;
+}
+.activities_button{
+	background-color:#184A54 ;
+	color: #FCC877;
+}
+
+footer{
+	text-align: center;
+}
+footer h4{
+	color: #FCC877;
+	font-size: bold;
+	font-weight: bold;
+}
+.ContatLink ul li a{
+	margin: 0px;
+}
+.NavLinks{
+	padding: 10px;
+}
+.circle{
+	border-radius: 50%;
+	font-size: 1.3em;
+}
+.fa-facebook, 
+.fa-instagram, 
+.fa-linkedin,
+.fa-twitter{
    background-color: #FCC877;
 	padding: 0.30em 0.30em;
 	color: #184A54;
-}                                                                                             
+}                                                                                            
