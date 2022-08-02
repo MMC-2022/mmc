@@ -8,16 +8,16 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">  <!--css file-->
 
+     
    <title>MMC</title>
 
 </head>
 <body>
    <header>
       <nav>
+         <a href="#" class="header_logo"><img src="images/logo/logo_2_p.png" alt="header_logo"></a>
          <ul class="NavLinks">
-            <li><a href="index.html"><img src="images/logo/logo_2_p.png" alt="header_logo"></a>
-            </li>
-            <li><a href="#">HOME</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Activities</a></li>
             <li><a href="#">Contact</a></li>
@@ -27,18 +27,26 @@
       </nav>
    </header>
    <main>
-      <h1>Moroccan Mathematical Community</h1>
+      <article class="MMCarticle" >
+      <h1>Moroccan Mathematical<br>Community</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div class="HomeButtons">
+      <div class="HomeButton">
          <ul>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSft9yFze52zj7btUqzs4AeyHAPiD8im0fVWFGeL9_h3zU7P8g/viewform" target="_blank"><button type="button" >JOIN US</button></a></li>
-            <li><button type="button">ACTIVITIES</button></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSft9yFze52zj7btUqzs4AeyHAPiD8im0fVWFGeL9_h3zU7P8g/viewform" target="_blank"><button type="button" class="joinUs_button" >JOIN US</button></a></li>
+            <li><button type="button" class="activities_button">ACTIVITIES</button></li>
          </ul>
       </div>
+      </article>
+      <article class = "Dayarticle">
+         <h2>Article of the day</h2>
+         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..<a href="">read more</a>"</p>
+         
+      </article>
    </main>
    <footer>
-      <div>
-         <ul class="NavLinks">
+      <h4>Moroccan Mathematical Community</h4>
+      <div class="NavLinks">
+         <ul >
             <li><a href="#">About</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Activities</a></li>
@@ -46,15 +54,18 @@
             <li><a href="#">Contact</a></li>
          </ul>
       </div>
-      <div>
-         <ul class="ContatLink">
+      <div class="ContatLink">
+         <ul>
             <li><a href="https://web.facebook.com/MoroccanMathCom/" target="_blank"><i class="fa fa-facebook circle"></i></a></li>
             <li><a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank"><i class="fa fa-instagram circle"></i></a></li>
             <li><a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank"><i class="fa fa-linkedin circle"></i></a></li>
+            <!--twitter icon
+             <li><a href="" target="_blank"><i class="fa fa-twitter circle"></i></a></li> -->
          </ul>
       </div>
       
    </footer>
 </body>
    <script type="text/javascript" src="script.js"></script> <!--js file-->
+
 </html>
