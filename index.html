@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!--css file-->
+    <link rel="stylesheet" href="css/style.css"> <!--css file-->
     <link rel="icon" href="images/logo/logo 2.png">  <!--website icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <title>Home | Moroccan mathematical community</title>
@@ -13,25 +13,36 @@
     
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/logo/logo 2.png" alt="logo" class="MMClogo" width="90px" ></a>
+            <a href="index.html"><img src="images/logo/logo 2.jpg" alt="logo" class="MMClogo" width="90px" ></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Activities</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/activities.html">Activities</a></li>
+                <li><a href="html/team.html">Team</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+                <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li>
+               
             </ul>
         </nav>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form method="get" action="">
+                <input type="text" placeholder="Search.." name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
     </header>
     <section>
         <div class="main">
             <p class="mmc_title">Moroccan Mathematical <br>Community</p>
             <p class="mmc_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div>    
-                <a href="#" class="button join">Join Us</a>
-                <a href="#" class="button activities">Activities</a>
+                <a href="html/joinus.html" class="button join">Join Us</a>
+                <a href="html/activities.html" class="button activities">Activities</a>
             </div>
         </div>
         
@@ -46,11 +57,11 @@
         <p class="title_footer">Moroccan Mathematical Community</p>
         <div class="NavLinks">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Activities</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/team.html">Team</a></li>
+                <li><a href="html/activities.html">Activities</a></li>
+                <li><a href="html/research.html">Research</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="ContatLink">
@@ -63,6 +74,6 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="script.js"></script> <!--js file-->
+    <script type="text/javascript" src="js/script.js"></script> <!--js file-->
 </body>
 </html>

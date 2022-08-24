@@ -1,0 +1,60 @@
+@import url("../backup/backup.css");
+
+section{
+    margin: 100px 40px 0 60px;
+
+}
+.main{
+    width: 50%;
+    color: var(--textColor);
+}
+.mmc_title{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.mmc_desc{
+    margin-bottom: 60px;
+}
+.button{
+    text-decoration: none;
+    padding: 0.7em 4em;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.join{
+    background-color: var(--buttonsColor);
+    color: var(--principleColor);
+    margin-right: 20px;
+}
+.activities{
+    border: 0.1em solid var(--buttonsColor);
+    color: var(--buttonsColor);
+}
+
+.Dayarticle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35vh;
+    align-items: center;
+}
+.Dayarticletitle{
+    color: var(--buttonsColor);
+    font-weight: 500;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.article{
+    
+    color: var(--textColor);
+    width: 75%;
+    text-align: center;
+    font-style: italic;
+
+}
+.readmore{
+    list-style: none;
+    color: var(--buttonsColor);
+}
