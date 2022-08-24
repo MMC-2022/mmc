@@ -26,13 +26,8 @@
 	background: #555; 
 }
 
-body {
-    position: relative;
+body{
     background-color: var(--principleColor);
-    background-image:url("../images/1.png"), url("../images/2.png"), url("../images/2.png");
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-size: 75%, 50%, 25%;
-	background-position: 230% -130%, 150% 15%, -18% 125% ;
 }
 
 header{

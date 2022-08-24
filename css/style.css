@@ -1,5 +1,14 @@
 @import url("../backup/backup.css");
 
+
+body {
+    position: relative;
+    background-image:url("../images/1.png"), url("../images/2.png"), url("../images/2.png");
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 75%, 50%, 25%;
+	background-position: 230% -130%, 150% 15%, -18% 125% ;
+}
+
 section{
     margin: 100px 40px 0 60px;
 
