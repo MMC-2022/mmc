@@ -3,16 +3,48 @@
 
 body {
     position: relative;
-    background-image:url("../images/1.png"), url("../images/2.png"), url("../images/2.png");
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-size: 75%, 50%, 25%;
-	background-position: 230% -130%, 150% 15%, -18% 125% ;
+    background-image: url("../images/2.png");
+	background-repeat:  no-repeat;
+	background-size:  25%;
+	background-position:  -15% 120% ;
+    overflow-x: hidden;
 }
 
 section{
     margin: 100px 40px 0 60px;
 
 }
+.stbg1{
+    position: absolute;
+    top: 0;
+    right: -25%;
+    animation: rotation 200s infinite linear;
+    z-index: -1;
+}
+
+.stbg2{
+    position: absolute;
+    top: -15%;
+    right: -25%;
+    animation: rotationinvers 200s infinite linear;
+    z-index: -1;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes rotationinvers {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
 .main{
     width: 50%;
     color: var(--textColor);
