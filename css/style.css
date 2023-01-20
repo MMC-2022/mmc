@@ -12,7 +12,6 @@ body {
 
 section{
     margin: 100px 40px 0 60px;
-
 }
 .stbg1{
     position: absolute;
@@ -52,26 +51,34 @@ section{
 .mmc_title{
     font-weight: 700;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .mmc_desc{
     margin-bottom: 60px;
 }
 .button{
     text-decoration: none;
-    padding: 0.7em 4em;
+    padding: 0.5em 4em;
     border-radius: 50px;
     font-weight: 600;
     text-transform: uppercase;
 }
+
+
 .join{
     background-color: var(--buttonsColor);
     color: var(--principleColor);
     margin-right: 20px;
 }
+.join:hover{
+    opacity:0.75;
+}
 .activities{
     border: 0.1em solid var(--buttonsColor);
     color: var(--buttonsColor);
+}
+.activities:hover{
+    opacity: 0.5;
 }
 
 .Dayarticle{
@@ -98,4 +105,7 @@ section{
 .readmore{
     list-style: none;
     color: var(--buttonsColor);
+}
+.readmore:hover{
+    opacity: 0.7;
 }
