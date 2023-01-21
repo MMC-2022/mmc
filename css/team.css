@@ -35,30 +35,37 @@
 .OneCarte{
    text-align:center;
    /* display: grid;
-   grid-template-rows: min-content;
-   gap: var(--size-3); */
+   grid-template-rows: min-content; */
+   gap: var(--size-3); 
    padding: 4rem; 
    background : white;
-   border-radius: var(--radius-3);
+   border-radius: 3%;
+
+
+   /* transform: scale(0.7);
+   transition: transform 0.2s ease-in-out; */
 }
 
 .OneCarte > img{
    border-radius:50%;
-   /* inline-size: 100%; */
-   /* aspect-ratio: 9/9; */
+   inline-size: 100%;
+   aspect-ratio: 6/6;
    object-fit: cover;
+   border-style: solid;
+   border-color: var(--principleColor);
 }
+
 
 .OneCarte  a{
    display: inline-block;
-   height: 45px;
-   width: 45px;
+   height: 35px;
+   width: 35px;
    background-color: var(--buttonsColor);
-   margin: 0 6px 10px 0;
+   margin: 0 6px 6px 0;
    text-align: center;
-   line-height: 45px;
+   line-height: 35px;
    border-radius: 50%;
-   color: var(--principleColor);
+   color: white;
    transition: all 0.3s ease;
 }
 
@@ -66,6 +73,15 @@
    opacity: 0.6;
 }
 
-/* .MemberName{
-   color: var(--textColor);
-} */
+
+.MemberName{
+   color: var(--principleColor);
+   font-weight : bold;
+   font-size: 0.8rem;
+}
+.MemberRole{
+   color: grey;
+   font-size:0.75rem ;
+   padding-bottom: 1rem;
+   padding-top: 0.1rem;
+}

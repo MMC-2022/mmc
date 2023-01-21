@@ -39,6 +39,9 @@ header{
     align-items: center;
     margin: 30px 50px;
 }
+.MMClogo{
+    width:120px;
+}
 
 header nav ul{
     display: flex;
@@ -58,7 +61,6 @@ header nav ul li a {
     text-decoration: none;
     color: var(--textColor);
     font-weight: 500;
-    font-size: var(--textSize);
 }
 
 header a:hover{
@@ -146,7 +148,6 @@ footer{
 }
 .title_footer{
     font-weight: 800;
-    font-size: var(--textSize);
     color: var(--buttonsColor);
     margin-bottom: 20px;
 
@@ -165,7 +166,6 @@ footer{
     margin: 0 20px;
     text-decoration: none;
     color: var(--textColor);
-    font-size: var(--textSize);
 
 }
 .NavLinks a:hover{
@@ -174,12 +174,12 @@ footer{
 
 footer .ContatLink a{
 	display: inline-block;
-	height: 45px;
-	width: 45px;
+	height: 35px;
+	width: 35px;
 	background-color: var(--buttonsColor);
-	margin: 0 6px 10px 0;
+	margin: 0 6px 6px 0;
 	text-align: center;
-	line-height: 45px;
+	line-height: 35px;
 	border-radius: 50%;
 	color: var(--principleColor);
 	transition: all 0.3s ease;
