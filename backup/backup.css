@@ -11,6 +11,9 @@
     --principleColor : #184A54;
     --textColor : #FEECD5;
     --buttonsColor : #FCC877;
+
+    --textSize : 1.3em;
+    --titleSize : 1.7em;
 }
 /*         scollbar         */
 ::-webkit-scrollbar {
@@ -27,7 +30,7 @@
 }
 
 body{
-    background-color: var(--principleColor);
+    background-color: var(--principleColor);     
 }
 
 header{
@@ -55,6 +58,7 @@ header nav ul li a {
     text-decoration: none;
     color: var(--textColor);
     font-weight: 500;
+    font-size: var(--textSize);
 }
 
 header a:hover{
@@ -142,7 +146,7 @@ footer{
 }
 .title_footer{
     font-weight: 800;
-    font-size: 1em;
+    font-size: var(--textSize);
     color: var(--buttonsColor);
     margin-bottom: 20px;
 
@@ -161,6 +165,7 @@ footer{
     margin: 0 20px;
     text-decoration: none;
     color: var(--textColor);
+    font-size: var(--textSize);
 
 }
 .NavLinks a:hover{
@@ -169,12 +174,12 @@ footer{
 
 footer .ContatLink a{
 	display: inline-block;
-	height: 30px;
-	width: 30px;
+	height: 45px;
+	width: 45px;
 	background-color: var(--buttonsColor);
 	margin: 0 6px 10px 0;
 	text-align: center;
-	line-height: 30px;
+	line-height: 45px;
 	border-radius: 50%;
 	color: var(--principleColor);
 	transition: all 0.3s ease;

@@ -1,1 +1,71 @@
 @import url("../backup/backup.css");
+
+@import "http://unpkg.com/open-props";
+@import "http://unpkg.com/open-props/normalize.min.css";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.TeamCartes::-webkit-scrollbar {
+   display: none;
+}
+
+.TeamCartes{
+   /* Hide scrollbar for IE, Edge and Firefox */
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+
+   display: grid;
+   gap: 5rem;
+   margin:8rem;
+   grid-auto-flow: column;
+   grid-auto-columns: 25%;
+
+   overflow-x: auto;
+   /* overscroll-behavior-inline: contain; */
+}
+
+.snap_inline{
+   scroll-snap-type: inline mandatory;
+   scroll-padding-inline: 2rem;
+}
+
+.snap_inline > * {
+   scroll-snap-align: start;
+}
+
+.OneCarte{
+   text-align:center;
+   /* display: grid;
+   grid-template-rows: min-content;
+   gap: var(--size-3); */
+   padding: 4rem; 
+   background : white;
+   border-radius: var(--radius-3);
+}
+
+.OneCarte > img{
+   border-radius:50%;
+   /* inline-size: 100%; */
+   /* aspect-ratio: 9/9; */
+   object-fit: cover;
+}
+
+.OneCarte  a{
+   display: inline-block;
+   height: 45px;
+   width: 45px;
+   background-color: var(--buttonsColor);
+   margin: 0 6px 10px 0;
+   text-align: center;
+   line-height: 45px;
+   border-radius: 50%;
+   color: var(--principleColor);
+   transition: all 0.3s ease;
+}
+
+.OneCarte a:hover{
+   opacity: 0.6;
+}
+
+/* .MemberName{
+   color: var(--textColor);
+} */
