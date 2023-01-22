@@ -2,6 +2,121 @@
 
 /* @import "http://unpkg.com/open-props";
 @import "http://unpkg.com/open-props/normalize.min.css"; */
+.html{
+   scroll-behavior: smooth;
+}
+section{
+   /* top  */
+   margin:80px 60px 0px 70px;
+}
+.PageTitle{
+   text-align: center;
+   margin-bottom: 60px;
+   font-size: 35px;
+   font-weight: bold;
+   color: var(--buttonsColor)
+}
+.slider{
+   margin-bottom: 20px;
+   position: relative;
+}
+.slider .owl-item.center .slider-card{
+   transform: scale(1);
+   opacity: 1;
+}
+
+.slider-card{
+   text-align:center;
+   padding: 3.5rem; 
+   background : white;
+   border-radius: 3%;
+   transform: scale(0.8);
+   opacity: 0.5;
+   transition: all 0.3s
+}
+
+
+.slider-card img {
+   border-radius:50%;
+   inline-size: 100%;
+   aspect-ratio: 6/6;
+   object-fit: cover;
+   border-style: solid;
+   border-color: var(--principleColor);
+   margin-bottom: 10px;
+}
+
+.MemberName{
+   color: var(--principleColor);
+   font-weight : bold;
+   font-size: 0.8rem;
+}
+.MemberRole{
+   color: grey;
+   font-size:0.75rem ;
+   padding-bottom: 1rem;
+   padding-top: 0.1rem;
+}
+
+.slider-card  a{
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   background-color: var(--buttonsColor);
+   margin: 0 6px 6px 0;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 50%;
+   color: white;
+   transition: all 0.3s ease;
+}
+
+.slider-card a:hover{
+   opacity: 0.6;
+}
+
+.owl-nav .owl-next{
+   position: absolute;
+   top: calc(40% - 25px );
+   right: 0;
+   opacity: 1;
+   font-size : 2.5rem !important;
+   color: var(--buttonsColor) !important;
+
+
+   z-index: 1  ;
+}
+
+.owl-nav .owl-prev{
+   position: absolute;
+   top: calc(40% - 25px );
+   left: 0;
+   opacity: 1;
+   font-size : 2.5rem !important;
+   color: var(--buttonsColor) !important;
+
+   z-index: 1  ;
+}
+
+.owl-dots{
+   text-align: center;
+   margin-top: 50px;
+}
+.owl-dot{
+   display: inline-block;
+   height : 10px !important;
+   width: 10px !important;
+   background-color: white !important;
+   opacity: .8;
+   margin: 0 10px;
+   border-radius: 50% ;
+}
+
+.owl-dot.active{
+   background-color: var(--buttonsColor) !important;
+}
+
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .TeamCartes::-webkit-scrollbar {
@@ -83,31 +198,4 @@
 }
 
 
-.OneCarte  a{
-   display: inline-block;
-   height: 35px;
-   width: 35px;
-   background-color: var(--buttonsColor);
-   margin: 0 6px 6px 0;
-   text-align: center;
-   line-height: 35px;
-   border-radius: 50%;
-   color: white;
-   transition: all 0.3s ease;
-}
 
-.OneCarte a:hover{
-   opacity: 0.6;
-}
-
-.MemberName{
-   color: var(--principleColor);
-   font-weight : bold;
-   font-size: 0.8rem;
-}
-.MemberRole{
-   color: grey;
-   font-size:0.75rem ;
-   padding-bottom: 1rem;
-   padding-top: 0.1rem;
-}

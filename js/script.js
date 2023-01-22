@@ -31,6 +31,60 @@ function closeSearch() {
 // Get the container element
 
 
+//OwlCarousel
+$(document).ready(function(){
+    $('.owl-carousel').find('.owl-item:first-child').addClass('first-item')
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        center:true,
+        // items:5,
+        nav:true,
+        navText :[
+            "<i class='fa fa-angle-left'></i>",
+            "<i class='fa fa-angle-right'></i>",
+        ],
+        responsive:{
+            0:{
+                items:1,
+                // nav:true
+            },
+            600:{
+                items:3,
+                // nav:true
+            },
+            1000:{
+                items:5,
+                // nav:true,
+                // loop:false
+            }
+        }
+    })
+} )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Scroll right function
 function scrollRight() {
     var container = document.querySelector('.TeamCartes');
