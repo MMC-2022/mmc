@@ -1,7 +1,7 @@
 @import url("../backup/backup.css");
 
-@import "http://unpkg.com/open-props";
-@import "http://unpkg.com/open-props/normalize.min.css";
+/* @import "http://unpkg.com/open-props";
+@import "http://unpkg.com/open-props/normalize.min.css"; */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .TeamCartes::-webkit-scrollbar {
@@ -15,12 +15,12 @@
 
    display: grid;
    gap: 5rem;
-   margin:8rem;
    grid-auto-flow: column;
-   grid-auto-columns: 25%;
+   grid-auto-columns: 20%;
+   /* grid-template-columns: repeat(2,1fr); */
 
    overflow-x: auto;
-   /* overscroll-behavior-inline: contain; */
+   overscroll-behavior: contain;
 }
 
 .snap_inline{
@@ -32,6 +32,34 @@
    scroll-snap-align: start;
 }
 
+
+.left-button , .right-button{
+   /* position: fixed; */
+   background-color: transparent;
+   color: var(--buttonsColor);
+   font-size : 3rem;
+   font-weight : bold;
+   font-family: italic;
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.left-button:hover, .right-button:hover{
+   opacity: 0.6;
+}
+
+.left-button{
+   margin-right: -150px;
+}
+
+.right-button{
+   margin-left: -150px;
+}
+
+
 .OneCarte{
    text-align:center;
    /* display: grid;
@@ -40,7 +68,6 @@
    padding: 4rem; 
    background : white;
    border-radius: 3%;
-
 
    /* transform: scale(0.7);
    transition: transform 0.2s ease-in-out; */
@@ -72,7 +99,6 @@
 .OneCarte a:hover{
    opacity: 0.6;
 }
-
 
 .MemberName{
    color: var(--principleColor);

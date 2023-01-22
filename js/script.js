@@ -8,30 +8,72 @@ function closeSearch() {
 
 }
 
-// horizontal media scroller
 
-//get the container element
-var container = document.querySelector(".TeamCartes");
+// // Get the container element
+// var container = document.querySelector('.TeamCartes');
 
-//get all the scroller items
-var items = document.querySelectorAll(".OneCarte");
+// // Get the left button element
+// var leftButton = document.querySelector('.left-button');
 
-//add event listener
-container.addEventListener("scroll", function(){
-    //get the scroll position
-    var scrollPosition  = container.scrollLeft;
+// // Get the right button element
+// var rightButton = document.querySelector('.right-button');
 
-    //loop through all the scroller items
-    for(var i=0; i<items.length; i++){
-        //get the position of the current item
-        var itemPosition = items[i].offsetLeft;
+// // Add click event listener to the left button
+// leftButton.addEventListener('click', function() {
+//   container.scrollLeft -= 100;
+// });
 
-        //check if the current item is in the middle of the scroller
-        if(itemPosition > scrollPosition && itemPosition < scrollPosition + container.offsetWidth){
-        //apply the "active" class to the current item
-            items[i].classList.add("active");
-        }else{
-            items[i].classList.remove("active");
-        }
-    }
-});
+// // Add click event listener to the right button
+// rightButton.addEventListener('click', function() {
+//   container.scrollLeft += 100;
+// });
+
+// Get the container element
+
+
+// Scroll right function
+function scrollRight() {
+    var container = document.querySelector('.TeamCartes');
+    container.scrollBy(350,0);
+}
+
+// Scroll left function
+function scrollLeft() {
+    var container = document.querySelector('.TeamCartes');
+    container.scrollBy(-550,0);
+}
+
+
+
+var items = document.querySelectorAll('.TeamCartes');
+var numberOfItemsToShow = 3;
+
+for (var i = numberOfItemsToShow; i < items.length; i++) {
+  items[i].style.display = 'none';
+}
+
+// // Get all the div elements
+// var items = document.querySelectorAll('.TeamCartes');
+
+// // Add an event listener to the window to detect scrolling
+// window.addEventListener('scroll', function() {
+//   // Get the current scroll position
+//   var scrollPosition = window.scrollY;
+
+//   // Loop through all the items
+//   for (var i = 0; i < items.length; i++) {
+//     // Get the position of the current item
+//     var itemPosition = items[i].getBoundingClientRect().top;
+
+//     // Check if the current item is in the middle of the page
+//     if (itemPosition > scrollPosition && itemPosition < scrollPosition + window.innerHeight) {
+//       // Apply the "active" class to the current item
+//       items[i].classList.add('active');
+//     } else {
+//       // Remove the "active" class from the current item
+//       items[i].classList.remove('active');
+//     }
+//   }
+// });
+
+
