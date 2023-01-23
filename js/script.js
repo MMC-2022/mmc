@@ -76,12 +76,10 @@ $(document).ready(function(){
 
         setTimeout(function(){
           var activeEls = $('.owl-item.active');
-          var activeItem = event.item.index;
           var slideToCaption1 = activeEls.eq(0); // Change this value to target a different slide
           var slideToCaption2 = activeEls.eq(4); // Change this value to target a different slide
           setCarouselCaption1(slideToCaption1);
           setCarouselCaption2(slideToCaption2);
-          setCarouselCaption3(activeItem);
         },1);
     
         function setCarouselCaption1(el){
@@ -92,18 +90,7 @@ $(document).ready(function(){
             $(".owl-item").removeClass("target2");
             el.addClass("target2");
         }
-        // function setCarouselCaption3(el){
-        //     if (el === 0) {
-        //         item1.style.display= 'block';
-        //         // item2.style.display= 'none';
-        //       } else {
-        //         item1.style.display= 'none';
-
-        //       }
-
-        //     // $('.AddTopaMargin').removeClass('active');
-        //     // $('#item-' + (activeItem + 1)).addClass('active');
-        // }
+    
     };
     
     
