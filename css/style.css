@@ -6,12 +6,12 @@ body {
     background-image: url("../images/2.png");
 	background-repeat:  no-repeat;
 	background-size:  25%;
-	background-position:  -17% 120% ;
+	background-position:  -17% 125% ;
     overflow-x: hidden;
 }
 
 section{
-    margin: 110px 60px 0 70px;
+    margin: 125px 60px 0 70px;
 }
 .stbg2{
     position: absolute;

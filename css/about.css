@@ -1,1 +1,77 @@
 @import url("../backup/backup.css");
+
+.html {
+   scroll-behavior: smooth;
+}
+
+body {
+   position: relative;
+   background-image: url("../images/2.png");
+   background-repeat: no-repeat;
+   background-size: 25%;
+   /* to right to bottom*/
+   background-position: -17% 120%;
+   overflow-x: hidden;
+}
+
+section {
+   margin: 50px 0px
+}
+
+.PageTitle {
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 35px;
+   font-weight: bold;
+   color: var(--buttonsColor)
+}
+
+.TeamImage img {
+   display: flex;
+   align-items: center;
+   margin: auto;
+   border: solid;
+   border-width: 7px;
+   border-radius: 30px;
+   border-color: var(--buttonsColor);
+   width: 50%;
+   margin-bottom: 30px;
+
+}
+
+.text {
+   align-items: center;
+   margin: auto;
+   /* margin-left: 110px; */
+   padding-top: 30px;
+   /* border : solid; */
+   color: white;
+   width: 80%;
+}
+
+.doc {
+   list-style: none;
+   color: var(--buttonsColor);
+}
+
+.doc:hover {
+   opacity: 0.7;
+}
+
+.backgroundImage1 {
+   position: absolute;
+   top: 15%;
+   right: -16%;
+   opacity: 0.7;
+   animation: rotation 200s infinite linear;
+   z-index: -1;
+}
+
+.backgroundImage2 {
+   position: absolute;
+   top: 15%;
+   left: -16%;
+   opacity: 0.7;
+   animation: rotation 200s infinite linear;
+   z-index: -1;
+}

@@ -1,1 +1,120 @@
 @import url("../backup/backup.css");
+
+.html {
+   scroll-behavior: smooth;
+}
+
+body {
+   position: relative;
+   background-image: url("../images/2.png");
+   background-repeat: no-repeat;
+   background-size: 25%;
+   /* to right to bottom*/
+   background-position: -17% 121%;
+   overflow-x: hidden;
+}
+
+section {
+   /* top right botton left */
+   margin: 75px 6%;
+}
+
+.Page_Title,
+.title {
+   text-align: center;
+   margin-bottom: 35px;
+   font-size: 35px;
+   font-weight: bold;
+   color: var(--buttonsColor)
+}
+
+.title {
+   font-size: 20px;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.desc {
+   color: var(--textColor);
+   font-size: 15px;
+}
+
+.item img {
+   width: 70%;
+}
+
+.art {
+   width: 60%
+}
+
+.research {
+   margin-top: 2.5%;
+   width: 60%
+}
+
+.education {
+   width: 70%
+}
+
+.activities_type {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   /* border: 2px solid red; */
+   margin: auto;
+   width: 100%;
+}
+
+.item {
+   padding-right: 5%;
+   padding-left: 5%;
+}
+
+.activities {
+   margin: auto;
+   margin-top: 120px;
+   border-radius: 10px;
+   padding: 20px 60px;
+   width: 85%;
+   background-color: white;
+   background-image: url("../images/1.png"), url("../images/1.png"), url("../images/1.png"), url("../images/1.png");
+   background-repeat: no-repeat;
+   background-size: 75%;
+   /* to right to top */
+   background-position: 250% 45%;
+}
+
+.icon {
+   width: 5%;
+   margin-left: -5.5%;
+   margin-top: -1%;
+   float: left;
+}
+
+.date {
+   display: inline;
+   color: var(--principleColor);
+}
+
+.DescSection {
+   display: flex;
+   align-items: center;
+}
+
+.DescSection img {
+   width: 30%;
+   margin-right: 1.5rem;
+   margin-left: -1.5rem;
+   margin-top: 2.5rem;
+}
+
+.DescSection p h3 {
+   float: right;
+}
+
+.DescSection h3 {
+   color: var(--principleColor);
+   margin-bottom: 20px;
+   text-align: center;
+
+}

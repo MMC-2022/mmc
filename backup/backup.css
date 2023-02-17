@@ -1,49 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Lato", Helvetica, Arial;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --principleColor : #184A54;
-    --textColor : #FEECD5;
-    --buttonsColor : #FCC877;
-
-    --textSize : 1.3em;
-    --titleSize : 1.7em;
+:root {
+    --principleColor: #184A54;
+    --textColor: #FEECD5;
+    --buttonsColor: #FCC877;
+    --textSize: 1.3em;
+    --titleSize: 1.7em;
 }
+
 /*         scollbar         */
 ::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-	background: #f1f1f1; 
+    background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
-	background: #888; 
+    background: #888;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-	background: #555; 
+    background: #555;
 }
 
-body{
-    background-color: var(--principleColor);     
+body {
+    background-color: var(--principleColor);
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 30px 50px;
 }
-.MMClogo{
-    width:120px;
+
+.MMClogo {
+    width: 120px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
@@ -51,7 +62,7 @@ header nav ul{
 
 }
 
-header nav ul li{
+header nav ul li {
     /* width: 100%; */
     list-style: none;
     margin: 0px 20px;
@@ -63,9 +74,10 @@ header nav ul li a {
     font-weight: 500;
 }
 
-header a:hover{
+header a:hover {
     opacity: 0.7;
 }
+
 /*         search popup          */
 
 .overlay {
@@ -76,9 +88,9 @@ header a:hover{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.63);
-    transition:0.5s all  ease-in-out;
+    transition: 0.5s all ease-in-out;
     transform: scale(1);
     backdrop-filter: blur(5px);
 
@@ -91,7 +103,7 @@ header a:hover{
     text-align: center;
     margin-top: 30px;
     margin: auto;
-  
+
 }
 
 .overlay .closebtn {
@@ -131,61 +143,73 @@ header a:hover{
 }
 
 .overlay button:hover {
-background: #bbb;
+    background: #bbb;
 }
+
 /*          section          */
 
 
 /*          footer          */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: auto;
+    margin-top: 100px;
     margin-bottom: 20px;
-    margin: 200px 40px 20px 40px;
-    
+
 }
-.title_footer{
+
+.title_footer {
     font-weight: 800;
     color: var(--buttonsColor);
     margin-bottom: 20px;
 
 }
-.NavLinks ul , .ContatLink ul{
+
+.NavLinks ul,
+.ContatLink ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
+
 }
-.NavLinks ul{
+
+.NavLinks ul {
     margin-bottom: 30px;
 }
-.NavLinks ul li a{
+
+.NavLinks ul li a {
     margin: 0 20px;
     text-decoration: none;
     color: var(--textColor);
 
 }
-.NavLinks a:hover{
+
+.NavLinks a:hover {
     opacity: 0.7;
 }
 
-footer .ContatLink a{
-	display: inline-block;
-	height: 35px;
-	width: 35px;
-	background-color: var(--buttonsColor);
-	margin: 0 6px 6px 0;
-	text-align: center;
-	line-height: 35px;
-	border-radius: 50%;
-	color: var(--principleColor);
-	transition: all 0.3s ease;
+.ContatLink a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: var(--buttonsColor);
+    margin: 0 6px 6px 0;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--principleColor);
+    transition: all 0.3s ease;
 }
-footer .ContatLink a:hover{
-	color: var(--buttonsColor) ;
-	background-color: var(--principleColor) ;
+
+footer .ContatLink a:hover {
+    color: var(--buttonsColor);
+    background-color: var(--principleColor);
     border: 0.03em solid var(--buttonsColor);
 }
+
+.current  {
+    border: 1px solid #ff4b4c;
+    color: #ff4b4c;
+  }
