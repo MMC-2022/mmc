@@ -6,25 +6,31 @@ body {
     background-image: url("../images/2.png");
 	background-repeat:  no-repeat;
 	background-size:  25%;
-	background-position:  -15% 120% ;
+	background-position:  -17% 125% ;
     overflow-x: hidden;
 }
 
 section{
-    margin: 100px 40px 0 60px;
-
+    margin: 125px 60px 0 70px;
 }
-.stbg1{
+.stbg2{
     position: absolute;
-    top: 0;
+    top: -2%;
     right: -25%;
     animation: rotation 200s infinite linear;
     z-index: -1;
 }
 
-.stbg2{
+.stbg3{
     position: absolute;
-    top: -15%;
+    bottom: -15%;
+    left: -18%;
+    z-index: -1;
+}
+
+.stbg1{
+    position: absolute;
+    top: -8%;
     right: -25%;
     animation: rotationinvers 200s infinite linear;
     z-index: -1;
@@ -44,53 +50,61 @@ section{
     to {
       transform: rotate(0deg);
     }
-  }
+}
 .main{
     width: 50%;
     color: var(--textColor);
 }
 .mmc_title{
-    font-weight: 700;
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 .mmc_desc{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .button{
     text-decoration: none;
-    padding: 0.7em 4em;
+    padding: 0.5em 4em;
     border-radius: 50px;
     font-weight: 600;
     text-transform: uppercase;
 }
+
+
 .join{
     background-color: var(--buttonsColor);
     color: var(--principleColor);
     margin-right: 20px;
 }
+.join:hover{
+    opacity:0.75;
+}
 .activities{
     border: 0.1em solid var(--buttonsColor);
     color: var(--buttonsColor);
+}
+.activities:hover{
+    opacity: 0.5;
 }
 
 .Dayarticle{
     display: flex;
     flex-direction: column;
-    margin-top: 35vh;
+    margin-top: 25vh;
     align-items: center;
 }
 .Dayarticletitle{
     color: var(--buttonsColor);
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
 }
 .article{
     
     color: var(--textColor);
-    width: 75%;
+    width: 65%;
     text-align: center;
     font-style: italic;
 
@@ -98,4 +112,7 @@ section{
 .readmore{
     list-style: none;
     color: var(--buttonsColor);
+}
+.readmore:hover{
+    opacity: 0.7;
 }

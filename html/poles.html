@@ -1,72 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/joinus.css"> <!--css file-->
-    <link rel="icon" href="images/logo/logo 2.png">  <!--website icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <title>Join Us | Moroccan mathematical community</title>
-</head>
-<body>
-    
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../images/logo/logo 2.jpg" alt="logo" class="MMClogo" width="90px" ></a>
-        </div>
-        <nav>
-            <ul>
-               <li><a href="about.html">About</a></li>
-               <li><a href="activities.html">Activities</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a href="poles.html">Poles</a></li>
-               <li><a href="research.html">Research</a></li>
-               <li><a href="team.html">Team</a></li>
-            
-            <!-- search button  -->
-                <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
-            </ul>
-        </nav>
-        <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-              >×</span
-            >
-            <div class="overlay-content">
-              <form method="get" action="">
-                <input type="text" placeholder="Search.." name="search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/poles.css">
+        <!--css file-->
+        <link rel="icon" href="../images/logo/logo 2.png">
+        <!--website icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <title>Poles | Moroccan mathematical community</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img
+                        src="../images/logo/logo 2.jpg"
+                        alt="logo"
+                        class="MMClogo"
+                        width="90px"
+                    >
+                </a>
             </div>
-          </div>
-    </header>
-    <section>
-       
-       
-        
-    </section>
-    <footer>
-        <p class="title_footer">Moroccan Mathematical Community</p>
-        <div class="NavLinks">
-            <ul>
-               <li><a href="about.html">About</a></li>
-               <li><a href="activities.html">Activities</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a href="poles.html">Poles</a></li>
-               <li><a href="research.html">Research</a></li>
-               <li><a href="team.html">Team</a></li>
-            </ul>
-        </div>
-        <div class="ContatLink">
-            <ul>
-                <li><a href="https://web.facebook.com/MoroccanMathCom/" target="_blank"><i class="fa fa-facebook circle"></i></a></li>
-                <li><a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank"><i class="fa fa-instagram circle"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank"><i class="fa fa-linkedin circle"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-twitter circle"></i></a></li> 
-            </ul>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="../js/script.js"></script> <!--js file-->
-</body>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="poles.html" class="current_page">Poles</a>
+                    </li>
+                    <!-- <li>
+                        <a href="research.html">Research</a>
+                    </li> -->
+                    <li>
+                        <a href="team.html">Team</a>
+                    </li>
+                    <!-- search button  -->
+                    <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
+                </ul>
+            </nav>
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+                    ×
+                </span>
+                <div class="overlay-content">
+                    <form method="get" action="">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="Container">
+                <p class="PageTitle">MMC POLES</p>
+                <div class="pole-slider">
+                    <div class="owl-carousel">
+                        <div class="card-pole">
+                            <div class="d-flex justify-content-center align-items-center mb-4 imgCard EducationImgCard">
+                                <img src="../images/poles/education.png">
+                            </div>
+                            <h5 class="poleName">
+                                Research
+                                <br>
+                                &Education
+                            </h5>
+                            <p class="poleDesc">Ensures excellence in mathematics through training, application, guidance, and support, while also encouraging scientific research in applied and pure mathematics.</p>
+                            <p>
+                                <a href="#desc">See more ...</a>
+                            </p>
+                        </div>
+                        <div class="card-pole">
+                            <div class="d-flex justify-content-center align-items-center mb-4 imgCard">
+                                <img src="../images/poles/media.png">
+                            </div>
+                            <h5 class="poleName">
+                                Media
+                                <br>
+                                &Communication
+                            </h5>
+                            <p class="poleDesc">Ensures excellence in mathematics through training, application, guidance, and support, while also encouraging scientific research in applied and pure mathematics.</p>
+                            <p>
+                                <a href="#desc">See more ...</a>
+                            </p>
+                        </div>
+                        <div class="card-pole">
+                            <div class="d-flex justify-content-center align-items-center mb-4 imgCard">
+                                <img src="../images/poles/sponsoring.png">
+                            </div>
+                            <h5 class="poleName">
+                                Sponsoring
+                                <br>
+                                &Collaboration
+                            </h5>
+                            <p class="poleDesc">Ensures excellence in mathematics through training, application, guidance, and support, while also encouraging scientific research in applied and pure mathematics.</p>
+                            <p>
+                                <a href="#desc">See more ...</a>
+                            </p>
+                        </div>
+                        <div class="card-pole">
+                            <div class="d-flex justify-content-center align-items-center mb-4 imgCard">
+                                <img src="../images/poles/it.png">
+                            </div>
+                            <h5 class="poleName">
+                                Information
+                                <br>
+                                &Technology
+                            </h5>
+                            <p class="poleDesc">Improves the daily lives and well-being of the community through technical support and facilitates communication between the community and math enthusiasts.</p>
+                            <p>
+                                <a href="#desc">See more ...</a>
+                            </p>
+                        </div>
+                        <div class="card-pole">
+                            <div class="d-flex justify-content-center align-items-center mb-4 imgCard">
+                                <br>
+                                <img src="../images/poles/design.png">
+                            </div>
+                            <h5 class="poleName">
+                                Design
+                                <br>
+                                &Animation
+                            </h5>
+                            <p class="poleDesc">An award-winning design and animation pole, combining creative vision with strategic thinking to bring stories to life.</p>
+                            <p>
+                                <a href="#desc">See more ...</a>
+                            </p>
+                        </div>
+                        <div class="card-pole">
+                            <div class="d-flex justify-content-center align-items-center mb-4 imgCard">
+                                <img src="../images/poles/event.png">
+                            </div>
+                            <h5 class="poleName">
+                                Events
+                                <br>
+                                &Logistics
+                            </h5>
+                            <p class="poleDesc">
+                                Provides event planning services and logistical support. This pole is responsible for ensuring that all events are executed seamlessly, from planning to execution
+                                <br>
+                            </p>
+                            <p>
+                                <a href="#desc">See more ...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pole-desc" id="desc">
+                    <div class="DescSection">
+                        <img class="img" src="../images/poles/education.png">
+                        <div class="Des=">
+                            <h3 class="title">Pole reasearch and education</h3>
+                            <p class="poleDesc Desc1">
+                                Research and Education pole has two departments: the research department and the education department.
+                            </p>
+                            <p class="poleDesc Desc2">
+                                The education department plays a vital role in promoting excellence in mathematics. Firstly, the department focuses on training young students in mathematics and its applications from an early age by providing both online and in-person courses, as well as organizing mathematics olympiads. Secondly, the department helps apply mathematical concepts to real-life projects through hands-on workshops, practical exercises, peer mentoring, and certification training. In addition, the department also provides academic guidance and mentorship to students, helping them navigate their academic journeys. Finally, the department excels in mathematics and its applications through cutting-edge research, and book and magazine publications. Overall, the research and education department is committed to enhancing students' understanding and application of mathematics, and fostering a passion for the subject that will serve them well throughout their academic and professional lives.
+                            </p>
+                            <p class="poleDesc Desc3">
+                                The research department has as a goal to encourage scientific research in applied and pure Mathematics.  
+                Our mission is to help Moroccan students gain the basic fundamentals of scientific research by taking part of our free workshops and trainings, and encourage them to collaborate with other members on MMC’s research projects. The end goal of the pole is to develop the mathematical thinking of its members and  train them to become independent researchers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="title_footer">Moroccan Mathematical Community</p>
+            <div class="NavLinks">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="poles.html" class="current_page">Poles</a>
+                    </li>
+                    <!-- <li>
+                        <a href="research.html">Research</a>
+                    </li> -->
+                    <li>
+                        <a href="team.html">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ContatLink">
+                <ul>
+                    <li>
+                        <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
+                            <i class="fa fa-facebook circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank">
+                            <i class="fa fa-instagram circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank">
+                            <i class="fa fa-linkedin circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-whatsapp circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope-o circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <!--js file-->
+    </body>
 </html>

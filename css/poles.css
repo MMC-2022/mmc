@@ -1,0 +1,197 @@
+@import url("../backup/backup.css");
+
+.html {
+   scroll-behavior: smooth;
+}
+
+body {
+   position: relative;
+   background-image: url("../images/2.png");
+   background-repeat: no-repeat;
+   background-size: 25%;
+   /* to right to bottom*/
+   background-position: -17% 117%;
+   overflow-x: hidden;
+}
+
+section {
+   /* top right botton left */
+   margin: 75px 200px 0px 200px;
+}
+
+.PageTitle {
+   text-align: center;
+   margin-bottom: 75px;
+   font-size: 35px;
+   font-weight: bold;
+   color: var(--buttonsColor)
+}
+
+.pole-slider {
+   margin-bottom: 20px;
+   position: relative;
+
+}
+
+/* center card */
+.pole-slider .owl-item.center .card-pole {
+   transform: scale(1);
+   opacity: 1;
+   z-index: 3;
+
+}
+
+
+/* seconds ones */
+.card-pole {
+   text-align: center;
+   /* top right bottom left */
+   padding: 0.7rem 1.15rem 0.8rem 1.1rem;
+   background: white;
+   border-radius: 10% !important;
+   transform: scale(0.8);
+   opacity: 0.4;
+   transition: all 0.3s;
+   background-image: url("../images/2.png"), url("../images/2.png");
+   background-repeat: no-repeat;
+   background-size: 55%;
+   /* to right to top */
+   background-position: 160% -20%;
+
+   z-index: 2;
+}
+
+.imgCard {
+   padding: 20px;
+}
+
+
+
+/* third ones */
+.target1,
+.target2 {
+   transform: scale(0.75) !important;
+   opacity: 0.3;
+   z-index: 1;
+}
+
+.target1 {
+   margin-right: -5px !important;
+   margin-left: 30px;
+}
+
+.target2 {
+   margin-left: -30px !important;
+}
+
+
+
+.poleName {
+   color: var(--principleColor);
+   font-weight: bold;
+   font-size: 0.8rem;
+   margin-top: -10px;
+}
+
+.poleDesc {
+   color: grey;
+   font-size: 0.75rem;
+   padding-bottom: 0.1rem;
+   padding-top: 0.1rem;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.card-pole a {
+   color: var(--buttonsColor);
+   text-align: center;
+   font-size: 13px;
+   font-weight: bold;
+   transition: all 0.3s ease;
+}
+
+.card-pole a:hover {
+   opacity: 0.6;
+}
+
+.owl-nav .owl-next {
+   position: absolute;
+   top: calc(40% - 25px);
+   right: 0;
+   opacity: 1;
+   font-size: 2.5rem !important;
+   color: var(--buttonsColor) !important;
+
+   z-index: 1;
+}
+
+.owl-nav .owl-prev {
+   position: absolute;
+   top: calc(40% - 25px);
+   left: 0;
+   opacity: 1;
+   font-size: 2.5rem !important;
+   color: var(--buttonsColor) !important;
+
+   z-index: 1;
+}
+
+.owl-dots {
+   text-align: center !important;
+   margin-top: 10px;
+   /* margin-bottom: 90px; */
+}
+
+.owl-dot {
+   height: 7px !important;
+   width: 7px !important;
+   background-color: white !important;
+   opacity: .8;
+   margin: 0 6px;
+   border-radius: 50%;
+
+}
+
+.owl-dot.active {
+   background-color: var(--buttonsColor) !important;
+   transform: scale(1.6) !important;
+}
+
+
+.pole-desc {
+   margin-top: 100px;
+}
+
+.DescSection {
+   display: flex;
+   align-items: center;
+   margin: auto;
+   border-radius: 10px;
+   padding: 20px 60px;
+   width: 85%;
+   height: 400px;
+   background-color: white;
+   background-image: url("../images/1.png"), url("../images/1.png"), url("../images/1.png"), url("../images/1.png");
+   background-repeat: no-repeat;
+   background-size: 75%;
+   /* to right to top */
+   background-position: 250% 45%;
+}
+
+.DescSection img {
+   width: 30%;
+   margin-right: 1.5rem;
+   margin-left: -1.5rem;
+   margin-top: 2.5rem;
+}
+
+.DescSection p h3 {
+   float: right;
+}
+
+.DescSection h3 {
+   color: var(--principleColor);
+   margin-bottom: 20px;
+   text-align: center;
+
+}

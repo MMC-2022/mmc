@@ -1,72 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/activities.css"> <!--css file-->
-    <link rel="icon" href="images/logo/logo 2.png">  <!--website icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <title>Activities | Moroccan mathematical community</title>
-</head>
-<body>
-    
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../images/logo/logo 2.jpg" alt="logo" class="MMClogo" width="90px" ></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="poles.html">Poles</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-            
-            <!-- search button  -->
-                <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
-            </ul>
-        </nav>
-        <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-              >×</span
-            >
-            <div class="overlay-content">
-              <form method="get" action="">
-                <input type="text" placeholder="Search.." name="search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/activities.css">
+        <!--css file-->
+        <link rel="icon" href="../images/logo/logo 2.png">
+        <!--website icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Activities | Moroccan mathematical community</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img
+                        src="../images/logo/logo 2.jpg"
+                        alt="logo"
+                        class="MMClogo"
+                        width="90px"
+                    >
+                </a>
             </div>
-          </div>
-    </header>
-    <section>
-       
-       
-        
-    </section>
-    <footer>
-        <p class="title_footer">Moroccan Mathematical Community</p>
-        <div class="NavLinks">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="poles.html">Poles</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </div>
-        <div class="ContatLink">
-            <ul>
-                <li><a href="https://web.facebook.com/MoroccanMathCom/" target="_blank"><i class="fa fa-facebook circle"></i></a></li>
-                <li><a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank"><i class="fa fa-instagram circle"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank"><i class="fa fa-linkedin circle"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-twitter circle"></i></a></li> 
-            </ul>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="../js/script.js"></script> <!--js file-->
-</body>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="activities.html" class="current_page">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="poles.html">Poles</a>
+                    </li>
+                    <!-- <li>
+                        <a href="research.html">Research</a>
+                    </li> -->
+                    <li>
+                        <a href="team.html">Team</a>
+                    </li>
+                    <!-- search button  -->
+                    <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
+                </ul>
+            </nav>
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×
+                </span
+            >
+                <div class="overlay-content">
+                    <form method="get" action="">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section>
+            <p class="Page_Title">What do we do ?</p>
+            <div class="activities_type">
+                <div class="item education">
+                    <img src="../images/education.png">
+                    <p class="title">EDUCATION</p>
+                    <p class="desc">production of free online content and books, organization of trainings and competitions and support of Moroccan brillant students in mathematics</p>
+                </div>
+                <div class="item research">
+                    <img src="../images/research.png">
+                    <p class="title">RESEARCH</p>
+                    <p class="desc">organization of scientific research in applied and pure mathematics and collection of statistics about the situation of mathematics in Morocco</p>
+                </div>
+                <div class="item science">
+                    <img src="../images/science.png">
+                    <p class="title">POP SCIENCE</p>
+                    <p class="desc">vulgarization of mathematics for the public audience and connect the Moroccan mathematical community</p>
+                </div>
+                <div class="item art">
+                    <img src="../images/art.png">
+                    <p class="title">ART</p>
+                    <p class="desc">sensibilize people by the importance and the beauty of mathematics with cinema, painting, sculpture and other art forms</p>
+                </div>
+            </div>
+            <div class="activities">
+                <img class="icon" src="../images/activity.png" >
+                <p class="date"> | dd/mm/yyyy</p>
+                <div class="DescSection">
+                    <img class="img" src="../images/community.jpg">
+                    <div class="Des">
+                        <h3 class="title">MMC research published</h3>
+                        <p class="poleDesc Desc2">
+                            The education department plays a vital role in promoting excellence in mathematics. Firstly, the department focuses on training young students in mathematics and its applications from an early age by providing both online and in-person courses, as well as organizing mathematics olympiads. Secondly, the department helps apply mathematical concepts to real-life projects through hands-on workshops, practical exercises, peer mentoring, and certification training. In addition, the department also provides academic guidance and mentorship to students, helping them navigate their academic journeys. Finally, the department excels in mathematics and its applications through cutting-edge research, and book and magazine publications. Overall, the research and education department is committed to enhancing students' understanding and application of mathematics, and fostering a passion for the subject that will serve them well throughout their academic and professional lives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="title_footer">Moroccan Mathematical Community</p>
+            <div class="NavLinks">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="activities.html" class="current_page">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="poles.html">Poles</a>
+                    </li>
+                    <!-- <li>
+                        <a href="research.html">Research</a>
+                    </li> -->
+                    <li>
+                        <a href="team.html">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ContatLink">
+                <ul>
+                    <li>
+                        <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
+                            <i class="fa fa-facebook circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank">
+                            <i class="fa fa-instagram circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank">
+                            <i class="fa fa-linkedin circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-whatsapp circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope-o circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <!--js file-->
+    </body>
 </html>

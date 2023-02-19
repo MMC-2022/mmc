@@ -1,72 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/team.css"> <!--css file-->
-    <link rel="icon" href="images/logo/logo 2.png">  <!--website icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <title>Team | Moroccan mathematical community</title>
-</head>
-<body>
-    
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../images/logo/logo 2.jpg" alt="logo" class="MMClogo" width="90px" ></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="poles.html">Poles</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-            
-            <!-- search button  -->
-                <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
-            </ul>
-        </nav>
-        <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-              >×</span
-            >
-            <div class="overlay-content">
-              <form method="get" action="">
-                <input type="text" placeholder="Search.." name="search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/team.css">
+        <!--css file-->
+        <link rel="icon" href="../images/logo/logo 2.png">
+        <!--website icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <title>Team | Moroccan mathematical community</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img
+                        src="../images/logo/logo 2.jpg"
+                        alt="logo"
+                        class="MMClogo"
+                        width="150px"
+                    >
+                </a>
             </div>
-          </div>
-    </header>
-    <section>
-       
-       
-        
-    </section>
-    <footer>
-        <p class="title_footer">Moroccan Mathematical Community</p>
-        <div class="NavLinks">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="poles.html">Poles</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </div>
-        <div class="ContatLink">
-            <ul>
-                <li><a href="https://web.facebook.com/MoroccanMathCom/" target="_blank"><i class="fa fa-facebook circle"></i></a></li>
-                <li><a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank"><i class="fa fa-instagram circle"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank"><i class="fa fa-linkedin circle"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-twitter circle"></i></a></li> 
-            </ul>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="../js/script.js"></script> <!--js file-->
-</body>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="poles.html">Poles</a>
+                    </li>
+                    <!-- <li>
+                        <a href="research.html">Research</a>
+                    </li> -->
+                    <li>
+                        <a href="team.html" class="current_page">Team</a>
+                    </li>
+                    <!-- search button  -->
+                    <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
+                </ul>
+            </nav>
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×
+                </span
+            >
+                <div class="overlay-content">
+                    <form method="get" action="">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="Container">
+                <p class="PageTitle">MMC TEAM</p>
+                <div class="slider">
+                    <div class="owl-carousel">
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/bamo.jpeg">
+                            </div>
+                            <h5 class="MemberName">Hamza Ba-mohammed</h5>
+                            <p class="MemberRole">President</p>
+                            <p>
+                                <a href="https://www.facebook.com/Hamza.Sci.Maths" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hambam/" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/benaroud.jpg">
+                            </div>
+                            <h5 class="MemberName">Youssef Benaroud</h5>
+                            <p class="MemberRole">Vice President</p>
+                            <p>
+                                <a href="https://www.facebook.com/ussupb" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ussupb" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/jniha.jpg">
+                            </div>
+                            <h5 class="MemberName">Imane Jniha</h5>
+                            <p class="MemberRole">Secretary</p>
+                            <p>
+                                <a href="https://www.facebook.com/imane.jniha?mibextid=ZbWKwL" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/imane-jniha-7914901b0" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/idrissi.jpg">
+                            </div>
+                            <h5 class="MemberName">Hajar El Idrissi</h5>
+                            <p class="MemberRole">Vice Secretary</p>
+                            <p>
+                                <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hajar-el-idrissi-" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/sahraoui1.jpg">
+                            </div>
+                            <h5 class="MemberName">Amine Sahraoui</h5>
+                            <p class="MemberRole">Treasurer</p>
+                            <p>
+                                <a href="https://www.facebook.com/amine.sahraoui" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/amine-sahraoui" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/tazi.jpg">
+                            </div>
+                            <h5 class="MemberName">Hamza Tazi</h5>
+                            <p class="MemberRole">Vice Treasurer</p>
+                            <p>
+                                <a href="https://instagram.com/hamza.tazii1?igshid=YmMyMTA2M2Y=" target="_blank">
+                                    <i class="fa fa-instagram circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hamza-tazi-202bb921b" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4 fahame">
+                                <img src="../images/Team/fahame.jpg">
+                            </div>
+                            <h5 class="MemberName">Ayoub Fahame</h5>
+                            <p class="MemberRole">Education Department head
+                                <br> & HR Director
+                            </p>
+                            <p>
+                                <a href="https://www.facebook.com/ayoub.fahame/" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/fahame-ayoub-a31b07c2001" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/iguenfer.jpg">
+                            </div>
+                            <h5 class="MemberName">Fatima Zahra Iguenfer</h5>
+                            <p class="MemberRole">Research Department head
+                                <br>
+                            </p>
+                            <p>
+                                <a href="https://www.facebook.com/fati.ig7?mibextid=ZbWKwL" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/fatima-zahra-iguenfer-6120a5191" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/nafia.png">
+                            </div>
+                            <h5 class="MemberName">Salma Nafia</h5>
+                            <p class="MemberRole">IT head</p>
+                            <p>
+                                <a href="https://www.facebook.com/profile.php?id=100078024972780" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="linkedin.com/in/nafia-salma" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/El Ourchani.jpeg">
+                            </div>
+                            <h5 class="MemberName">Assia El-Ouarchani</h5>
+                            <p class="MemberRole">Sponsoring &Collaboration head</p>
+                            <p>
+                                <a href="https://www.facebook.com/assia.elouarchani" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/assia-elouarchani-067048234" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/benabelkader.jpeg">
+                            </div>
+                            <h5 class="MemberName">Mehdi Benabdelkader</h5>
+                            <p class="MemberRole">Design &Animation head</p>
+                            <p>
+                                <a href="https://twitter.com/B_MehdiFluka" target="_blank">
+                                    <i class="fa fa-twitter circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mehdi-benabdelkader-059614224/" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/laaribi.png">
+                            </div>
+                            <h5 class="MemberName">Ilham Laaribi</h5>
+                            <p class="MemberRole">Media &Communication head</p>
+                            <p>
+                                <a href="https://www.facebook.com/ilhamlaaribi?mibextid=LQQJ4d" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ilham-laaribi-580956195/" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="../images/Team/kourdou.jpg">
+                            </div>
+                            <h5 class="MemberName">Aya Kourdou</h5>
+                            <p class="MemberRole">Events &Logistics head
+                                <head></head>
+                            </p>
+                            <p>
+                                <a href="" target="_blank">
+                                    <i class="fa fa-facebook circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kourdou-aya2021" target="_blank">
+                                    <i class="fa fa-linkedin circle"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="title_footer">Moroccan Mathematical Community</p>
+            <div class="NavLinks">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="poles.html">Poles</a>
+                    </li>
+                    <!-- <li>
+                        <a href="research.html">Research</a>
+                    </li> -->
+                    <li>
+                        <a href="team.html" class="current_page">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ContatLink">
+                <ul>
+                    <li>
+                        <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
+                            <i class="fa fa-facebook circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank">
+                            <i class="fa fa-instagram circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank">
+                            <i class="fa fa-linkedin circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-whatsapp circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                           <i class="fa fa-envelope-o circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <!--js file-->
+    </body>
 </html>
