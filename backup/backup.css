@@ -209,7 +209,8 @@ footer .ContatLink a:hover {
     border: 0.03em solid var(--buttonsColor);
 }
 
-.current  {
-    border: 1px solid #ff4b4c;
-    color: #ff4b4c;
+.current_page  {
+   font-weight: bold;
+   color: var(--buttonsColor);
+   text-decoration: underline !important;
   }
