@@ -11,7 +11,7 @@ function closeSearch() {
 // Responsive FAQ
 const buttons = document.querySelectorAll(".faq-toggle");
 buttons.forEach((button) => {
-    button.addEventListener("click", () =>{
+    button.addEventListener("click", () => {
         const parent = button.closest('.faq');
         const isActive = parent.classList.contains('active');
         document.querySelectorAll('.faq').forEach((el) => {
@@ -26,13 +26,12 @@ buttons.forEach((button) => {
 
 
 
-// Get the container element
 
 
 //OwlCarousel
 $(document).ready(function () {
     var owl = $('.owl-carousel');
-
+    var desc = $('#desc');
     owl.owlCarousel({
         loop: true,
         margin: 25,
@@ -72,7 +71,7 @@ $(document).ready(function () {
             // Get the index of the active center item
             var activeIndex = event.item.index;
             var title;
-            var desc1, desc2,desc3;
+            var desc1, desc2, desc3;
             var img;
             switch (activeIndex) {
                 case 5:
@@ -82,68 +81,51 @@ $(document).ready(function () {
                     desc3 = "The research department has as a goal to encourage scientific research in applied and pure Mathematics. Our mission is to help Moroccan students gain the basic fundamentals of scientific research by taking part of our free workshops and trainings, and encourage them to collaborate with other members on MMC’s research projects. The end goal of the pole is to develop the mathematical thinking of its members and  train them to become independent researchers.";
                     img = "../images/poles/education.png";
                     break;
-                case 6: 
-                    title = "Pole IT";
-                    desc1="The IT pole is a department that provides technical support and solutions to community members in various ways, including improving their daily lives and overall well-being. This may include offering IT training, providing software and hardware assistance, and troubleshooting technical issues. Additionally, the pole acts as a bridge between the community and math enthusiasts, facilitating communication and collaboration between the two groups. This can involve organizing events and workshops that bring together math lovers, as well as creating online forums and resources for sharing information and knowledge. By promoting greater understanding and appreciation of math and technology, the IT pole helps to create a more connected and empowered community."
-                    desc2="";
-                    desc3=""; 
-                    img = "../images/poles/it.png";
+                case 6:
+                    title = "Pole media and communication";
+                    desc1 = "Our pole involves overseeing and coordinating the various forms of media and communication used by the community. This includes tasks as developing and implementing a communication strategy, managing the community's social media presence, and handling media inquiries, and ensuring that the communication efforts align with overall goals and values of the community.<br><br>Additionally, the media and the communication pole involves guaranteeing that the communication within the community is healthy and effective."
+                    desc2 = "";
+                    desc3 = "";
+                    img = "../images/poles/media.png";
                     break;
                 case 7:
-                    title = "Pole design and animation"; 
-                    desc1=""
-                    desc2="";
-                    desc3="";
-                    img = "../images/poles/design.png";
-                    break;
-                case 8:
-                title = "Pole media and communication"; 
-                desc1 = "Our pole involves overseeing and coordinating the various forms of media and communication used by the community. This includes tasks as developing and implementing a communication strategy, managing the community's social media presence, and handling media inquiries, and ensuring that the communication efforts align with overall goals and values of the community.<br><br>Additionally, the media and the communication pole involves guaranteeing that the communication within the community is healthy and effective."
-                desc2="";
-                desc3="";
-                img = "../images/poles/media.png";
-                break;
-                case 9:
-                    title = "Pole sponsoring and collaboration"; 
-                    desc1=""
-                    desc2="";
-                    desc3="";
+                    title = "Pole sponsoring and collaboration";
+                    desc1 = ""
+                    desc2 = "";
+                    desc3 = "";
                     img = "../images/poles/sponsoring.png";
                     break;
+                case 8:
+                    title = "Pole IT";
+                    desc1 = "The IT pole is a department that provides technical support and solutions to community members in various ways, including improving their daily lives and overall well-being. This may include offering IT training, providing software and hardware assistance, and troubleshooting technical issues. Additionally, the pole acts as a bridge between the community and math enthusiasts, facilitating communication and collaboration between the two groups. This can involve organizing events and workshops that bring together math lovers, as well as creating online forums and resources for sharing information and knowledge. By promoting greater understanding and appreciation of math and technology, the IT pole helps to create a more connected and empowered community."
+                    desc2 = "";
+                    desc3 = "";
+                    img = "../images/poles/it.png";
+                    break;
+                case 9:
+                    title = "Pole design and animation";
+                    desc1 = "We are responsible for creating visual communication materials that effectively convey a message or idea. we work closely with other poles and we use an artistic approach with knowledge of design principles to create visually appealing layouts that align with the brand's identity and the community's overall strategy, and resonate with our intended audience."
+                    desc2 = "";
+                    desc3 = "";
+                    img = "../images/poles/design.png";
+                    break;
                 case 10:
-                    title = "Pole events and logistics"; 
+                    title = "Pole events and logistics";
                     desc1 = "Our pole encompasses everything about an event,  from its planning and execution to venue selection, catering, budgeting and financial management, and onsite management. We also provide logistical support such as transportation arrangements, audio-visual support, security, and other services. We understand the importance of planning and logistics for a successful event, and are committed to providing the highest quality of professional services."
-                    desc2="";
-                    desc3="";
-                    img  = "../images/poles/event.png";
-                    break;          
-                  }
+                    desc2 = "";
+                    desc3 = "";
+                    img = "../images/poles/event.png";
+                    break;
+            }
             // Update the text in the div
             $('.title').text(title);
-            $('.Desc1').text(desc1);	
-            $('.Desc2').text(desc2);	
-            $('.Desc3').text(desc3);	
+            $('.Desc1').text(desc1);
+            $('.Desc2').text(desc2);
+            $('.Desc3').text(desc3);
             $('.img').attr('src', img);
         }
     })
 
-    $.fn.isVisible = function() {
-        var rect = this[0].getBoundingClientRect();
-        return (
-          rect.top <= 0 &&
-          rect.left <= 0 &&
-          rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right >= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      };
-
-    $(window).on('scroll', function() {
-        if ($('#item5').isVisible()) {
-            owl.trigger('play.owl.autoplay');
-        }else{
-            owl.trigger('stop.owl.autoplay');
-        }
-    });
 
     owl.on('changed.owl.carousel', startCarousel);
     function startCarousel(event) {
@@ -167,7 +149,11 @@ $(document).ready(function () {
 
     };
 
-    
+    desc.hover(function(){
+        owl.trigger('stop.owl.autoplay');
+      }, function(){
+        owl.trigger('play.owl.autoplay');
+      });
 
 
 });
