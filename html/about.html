@@ -44,13 +44,12 @@
                         <a href="team.html">Team</a>
                     </li>
                     <!-- search button  -->
-                    <!-- <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li> -->
+                    <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li>
                 </ul>
             </nav>
             <div id="myOverlay" class="overlay">
                 <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×
-                </span
-            >
+                </span>
                 <div class="overlay-content">
                     <form method="get" action="">
                         <input type="text" placeholder="Search.." name="search">
@@ -63,23 +62,54 @@
         </header>
         <section>
             <div>
-                <img
+                <!-- <img
                     src="../images/3.png"
                     alt="images 3"
                     class="backgroundImage1"
                     width="32%"
-                >
+                > -->
                 <img
                     src="../images/3.png"
                     alt="images 3"
                     class="backgroundImage2"
-                    width="32%"
+                    width="30%"
                 >
             </div>
             <p class="PageTitle">About MMC</p>
-            <div class="TeamImage">
-                <img src="../images/community.jpg">
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="../images/about/fmo.jpg" style="width:900px; height: 400px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../images/about/former.jpeg" style="width:900px; height: 400px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../images/about/gca1.jpeg" style="width:900px; height: 400px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../images/about/ocj.jpg" style="width:900px; height: 400px;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
             </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            <!-- <div class="TeamImage">
+                <img src="../images/community.jpg">
+            </div> -->
             <div class="text">
                 <p>
                     The idea of MMC is not new. In fact, I founded in 2017, with my friend Mohammed JAMAL, a Mathematical Network of training for Math Olympiads named "EMPIMO". In this Network, I had the opportunity to launch and manage many initiatives related to mathematics olympiads, and mathematics generally, such as : Olympic Maths Forum, Combinatorical Junior Olympiad, Olympic Mathematical Junior Camp, Numerical Library, and the foundation of some Scholar clubs of mathematics in different High-Schools in Morocco. Also, I saw a lot of flaws and problems in the treatment of mathematics in Morocco on several levels : education, scientifical research, vulgarization, etc...
@@ -95,8 +125,8 @@
                 <br>
                 <p>
                     Our organization's governing documents consist of two parts: the
-                    <a class="doc">by-laws</a> and the
-                    <a class="doc">internal regulation</a>
+                    <a class="doc" href="../reglements/MMC_Loi_fondame.pdf" target="_blank">by-laws</a> and the
+                    <a class="doc" href="../reglements/MMC_Loi_Intern.pdf" target="_blank">internal regulation</a>
                     . The by-laws were adopted by our General Constitutive Assembly held in March 20, 2022.
                 </p>
             </div>
@@ -144,19 +174,21 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://api.whatsapp.com/send?phone=212657380193&text=Hello%20MMC%2C%20" target="_blank">
                             <i class="fa fa-whatsapp circle"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="mailto:moroccan.math@gmail.com" target="_blank">
                             <i class="fa fa-envelope-o circle"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </footer>
+
         <script type="text/javascript" src="../js/script.js"></script>
+        <script type="text/javascript" src="../js/slider.js"></script>
         <!--js file-->
     </body>
 </html>

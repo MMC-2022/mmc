@@ -10,6 +10,7 @@ function closeSearch() {
 
 // Responsive FAQ
 const buttons = document.querySelectorAll(".faq-toggle");
+
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         const parent = button.closest('.faq');
@@ -40,7 +41,7 @@ $(document).ready(function () {
         items: 5,
         // auto play feature
         autoplay: true,         // comment this line to stop the auto-play
-        autoplayTimeout: 3000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: true,
 
         //

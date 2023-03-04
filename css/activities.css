@@ -14,11 +14,6 @@ body {
    overflow-x: hidden;
 }
 
-section {
-   /* top right botton left */
-   margin: 75px 6%;
-}
-
 .Page_Title,
 .title {
    text-align: center;
@@ -28,9 +23,32 @@ section {
    color: var(--buttonsColor)
 }
 
+.activities_type {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   margin: auto;
+   width: 90%;
+}
+.item {
+   /* padding-right: 4%;
+   padding-left: 4%; */
+   width: 25%;
+   margin-left: 3%;
+   margin-right: 3%;
+
+}
+
+.item img {
+   width: 100px;
+   height: 100px;
+   margin-bottom: 30px;
+}
+
+
 .title {
    font-size: 20px;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
    font-weight: bold;
 }
 
@@ -39,36 +57,6 @@ section {
    font-size: 15px;
 }
 
-.item img {
-   width: 70%;
-}
-
-.art {
-   width: 60%
-}
-
-.research {
-   margin-top: 2.5%;
-   width: 60%
-}
-
-.education {
-   width: 70%
-}
-
-.activities_type {
-   display: flex;
-   align-items: center;
-   text-align: center;
-   /* border: 2px solid red; */
-   margin: auto;
-   width: 100%;
-}
-
-.item {
-   padding-right: 5%;
-   padding-left: 5%;
-}
 
 .activities {
    margin: auto;

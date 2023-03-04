@@ -32,7 +32,6 @@ section {
    z-index: -1;
 }
 
-
 .FAQ-Title,
 .Form-Title,
 .Title {
@@ -46,95 +45,6 @@ section {
 .FAQ-Title {
    margin-bottom: 50px;
 }
-
-.Form-Title,
-.form-container {
-   display: flex;
-   /* text-align: left; */
-   margin-left: 10%;
-   align-items: center;
-
-}
-
-/* CONTACT US */
-.ContactUs {
-   width: 35%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
-   margin-bottom: 20px;
-   margin-left: -5%;
-}
-
-.sous_title {
-   color: whitesmoke;
-   text-align: center;
-   padding-bottom: 18px;
-}
-
-.ContactUs .ContatLink a {
-   height: 55px;
-   width: 55px;
-   line-height: 60px;
-   margin: 0 15px 15px 0;
-   background-color: whitesmoke;
-}
-.ContactUs .ContatLink .fa {
-   font-size: 25px;
-}
-.ContactUs .ContatLink a:hover {
-   border-radius: 50%;
-   border: solid;
-   border-color:  whitesmoke;
-   background-color: var(--princpalColor);
-   color: whitesmoke;
-}
-
-.form-group {
-   display: inline-block;
-   margin-right: 10%;
-}
-
-#myForm {
-   color: white;
-   width: 60%;
-}
-
-#name,
-#email,
-#message,
-#object {
-   box-sizing: border-box;
-   padding: 6px;
-   border: 2px solid #ccc;
-   border-radius: 4px;
-   margin-bottom: 15px;
-}
-
-#message {
-   height: 200px;
-}
-
-#name,
-#email {
-   width: 135%;
-}
-
-#message,
-#object {
-   width: 64%;
-}
-
-.submitButton {
-   background-color: var(--buttonsColor);
-   padding: 8px 30px;
-   border-radius: 5px;
-   border: 2px none;
-   color: whitesmoke;
-   font-weight: bold ;
-}
-
 
 /* FAQ Ssection */
 .faq-container {
@@ -153,6 +63,7 @@ section {
    padding: 20px;
    position: relative;
    overflow: hidden;
+   cursor: pointer;
 }
 
 .faq:not(:first-child) {
@@ -184,7 +95,6 @@ section {
 
 .faq-toggle {
    background-color: transparent !important;
-   ;
    border: 0px solid #000;
    color: inherit;
    border-radius: 50%;
@@ -211,4 +121,113 @@ section {
    background-color: var(--accent-color);
    border-color: var(--accent-color);
    color: #000;
+}
+
+/* CONTACT US */
+.Form-Title,
+.form-container {
+   display: flex;
+   margin-left: 6%;
+}
+
+#myForm {
+   color: white;
+   width: 50%;
+   margin-right: 10%;
+}
+
+.form-Namail{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 2%;
+   width: 100%;
+}
+.object{
+   margin-bottom: 2%;
+}
+.name{
+   margin-right: 5%;
+   width: 50%;
+}
+.email{
+   width: 50%;
+}
+.label{
+   margin-bottom: 5px;
+}
+#name,#email,#object{
+   width: 100%;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 2px;
+   outline: none;
+   
+}
+
+#message{
+   padding: 10px 15px;
+   border: none;
+   border-radius: 2px;
+   outline: none;
+   width: 100%;
+   resize: vertical;
+}
+
+input[type='Submit'] {
+   background-color: var(--buttonsColor);
+   padding: 8px 40px;
+   margin-top: 3%;
+   border-radius: 2px;
+   border:  none;
+   color: #fff;
+   font-weight:500;
+}
+
+
+.ContactUs {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+   margin-left: -5%;
+}
+
+.sous_title {
+   color: whitesmoke;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.mmcsm ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   
+}
+.mmcsm ul{
+   margin-bottom: 30px;
+}
+.mmcsm ul li a{
+   margin: 0 20px;
+   text-decoration: none;
+   color: var(--principleColor);
+   
+}
+.mmcsm a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: var(--textColor);
+  margin: 0 10px 20px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--principleColor);
+  transition: all 0.3s ease;
+}
+.mmcsm a:hover{
+  color: var(--textColor) ;
+  background-color: var(--principleColor) ;
+   border: 0.03em solid var(--textColor);
 }

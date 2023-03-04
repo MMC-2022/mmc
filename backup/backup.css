@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*,
-*::before,
-*::after {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
 }
 
 html{
     scroll-behavior: smooth;
-    font-family: "Lato", Helvetica, Arial;
-    box-sizing: border-box;
 }
 
 :root {
     --principleColor: #184A54;
     --textColor: #FEECD5;
     --buttonsColor: #FCC877;
-    --textSize: 1.3em;
-    --titleSize: 1.7em;
+    /* --textSize: 1.3em;
+    --titleSize: 1.7em; */
 }
 
 /*         scollbar         */
@@ -50,22 +48,24 @@ header {
     margin: 30px 50px;
 }
 
+
 .MMClogo {
-    width: 120px;
+    width: 90px;
 }
 
 header nav ul {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
-    flex-wrap: wrap;
+    /*  flex-wrap: wrap; */
 
 }
 
 header nav ul li {
     /* width: 100%; */
     list-style: none;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
+    margin-left: 80px;
 }
 
 header nav ul li a {
@@ -75,7 +75,8 @@ header nav ul li a {
 }
 
 header a:hover {
-    opacity: 0.7;
+    color: var(--buttonsColor);
+    transition: 0.5s all;
 }
 
 /*         search popup          */
@@ -150,67 +151,57 @@ header a:hover {
 
 
 /*          footer          */
-footer {
+
+footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: auto;
     margin-bottom: 20px;
-
+    margin: 200px 40px 20px 40px;
+    
 }
-
-.title_footer {
+.title_footer{
     font-weight: 800;
+    font-size: 1em;
     color: var(--buttonsColor);
     margin-bottom: 20px;
 
 }
-
-.NavLinks ul,
-.ContatLink ul {
+.NavLinks ul , .ContatLink ul{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-
+    
 }
-
-.NavLinks ul {
+.NavLinks ul{
     margin-bottom: 30px;
 }
-
-.NavLinks ul li a {
-    margin: 0 20px;
+.NavLinks ul li a{
+    margin: 0 50px;
     text-decoration: none;
     color: var(--textColor);
-
+    
 }
-
-.NavLinks a:hover {
-    opacity: 0.7;
+footer .ContatLink a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: var(--buttonsColor);
+	margin: 0 30px 20px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--principleColor);
+	transition: all 0.3s ease;
 }
-
-.ContatLink a {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    background-color: var(--buttonsColor);
-    margin: 0 6px 6px 0;
-    text-align: center;
-    line-height: 35px;
-    border-radius: 50%;
-    color: var(--principleColor);
-    transition: all 0.3s ease;
-}
-
-footer .ContatLink a:hover {
-    color: var(--buttonsColor);
-    background-color: var(--principleColor);
+footer .ContatLink a:hover{
+	color: var(--buttonsColor) ;
+	background-color: var(--principleColor) ;
     border: 0.03em solid var(--buttonsColor);
 }
-
 .current_page  {
-   font-weight: bold;
+   /* font-weight: bold; */
    color: var(--buttonsColor);
-   text-decoration: underline !important;
+   /* text-decoration: underline !important; */
   }

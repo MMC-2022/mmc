@@ -14,8 +14,12 @@ body {
 }
 section{
    /* top right botton left */
-   margin:75px 200px 0px 200px;
+   /* margin: px 200px 0px 200px; */
+   margin : 0 100px;
 }
+
+
+
 .PageTitle{
    text-align: center;
    margin-bottom: 75px;
@@ -42,8 +46,9 @@ section{
 .slider-card{
    text-align:center;
    padding: 2rem; 
+   height: 350px;
    background : white;
-   border-radius: 10% !important;
+   border-radius: 5% !important;
    transform:scale(0.8);
    opacity: 0.4;
    transition: all 0.3s;
@@ -51,8 +56,7 @@ section{
    background-repeat:  no-repeat;
    background-size:  60%;
    /* to right to top */
-   background-position:  175% -31% , -75% 131%;
-
+   background-position:  175% -30% , -75% 130%;
    z-index: 2;
 }
 
@@ -60,7 +64,6 @@ section{
 .target1, .target2 {
    transform:scale(0.75) !important;
    opacity: 0.3;
-
    z-index: 1;
  }
 
@@ -78,32 +81,32 @@ section{
    border-radius:50%;
    inline-size: 100%;
    aspect-ratio:6/6;
+   width: 10%;
    object-fit: cover;
    border-style: solid;
    border-color: var(--principleColor);
-   margin-bottom: 10px;
+   margin-bottom: 30px;
 }
 
 .MemberName{
    color: var(--principleColor);
    font-weight : bold;
-   font-size: 0.65rem;
+   font-size: 0.7rem;
 }
 .MemberRole{
    color: grey;
-   font-size:0.5rem ;
+   font-size:0.6rem ;
    padding-bottom: 1rem;
    padding-top: 0.1rem;
 }
 
-.fahame img{
-   margin-top: -7px;
-}
+
 
 .slider-card  a{
    display: inline-block;
    height: 25px;
    width: 25px;
+   margin: 0 2px;
    background-color: var(--buttonsColor);
    text-align: center;
    line-height: 25px;
@@ -111,7 +114,9 @@ section{
    color: white;
    transition: all 0.3s ease;
 }
-
+.slider-card i{
+   font-size: 0.87em;
+}
 .slider-card a:hover{
    opacity: 0.6;
 }
