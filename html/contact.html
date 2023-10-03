@@ -28,39 +28,15 @@
             </div>
             <nav>
                 <ul>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="activities.html">Activities</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="current_page">Contact</a>
-                    </li>
-                    <li>
-                        <a href="poles.html">Poles</a>
-                    </li>
-                    <!-- <li>
-                        <a href="research.html">Research</a>
-                    </li> -->
-                    <li>
-                        <a href="team.html">Team</a>
-                    </li>
-                    <!-- search button  -->
-                    <li><a href="#" onclick="openSearch()"  ><i class="fa fa-search"></i></a></li>
-                </ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html" class="current_page">Contact</a></li>
+                    <li><a href="poles.html">Poles</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSft9yFze52zj7btUqzs4AeyHAPiD8im0fVWFGeL9_h3zU7P8g/viewform" target="_blank" class="btn register"> Join us</a></li>              
+                  </ul>
             </nav>
-            <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-              >×</span
-            >
-            <div class="overlay-content">
-              <form method="get" action="">
-                <input type="text" placeholder="Search.." name="search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-          </div>
+            
         </header>
         <section>
             <div>
@@ -79,71 +55,9 @@
             </div>
 
             <p class="FAQ-Title">Frequently Asked Questions</p>
-            <div class="faq-container">
-                <div class="faq">
-                    <h4 class="faq-title">
-                        Lorem ipsum dolor sit amet.
-                    </h4>
-                    <p class="faq-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nobis, repellat neque non dicta
-                fugiat veritatis sit delectus perspiciatis quis?
-                    </p>
-                    <button class="faq-toggle">
-                        <i class="fa fa-angle-down"></i>
-                    </button>
-                </div>
-                <div class="faq">
-                    <h4 class="faq-title">
-                        Lorem ipsum dolor sit amet.
-                    </h4>
-                    <p class="faq-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nobis, repellat neque non dicta
-                fugiat veritatis sit delectus perspiciatis quis?
-                    </p>
-                    <button class="faq-toggle">
-                        <i class="fa fa-angle-down"></i>
-                    </button>
-                </div>
-                <div class="faq">
-                    <h4 class="faq-title">
-                        Lorem ipsum dolor sit amet.
-                    </h4>
-                    <p class="faq-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nobis, repellat neque non dicta
-                fugiat veritatis sit delectus perspiciatis quis?
-                    </p>
-                    <button class="faq-toggle">
-                        <i class="fa fa-angle-down"></i>
-                    </button>
-                </div>
-                <div class="faq">
-                    <h4 class="faq-title">
-                        Lorem ipsum dolor sit amet.
-                    </h4>
-                    <p class="faq-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nobis, repellat neque non dicta
-                fugiat veritatis sit delectus perspiciatis quis?
-                    </p>
-                    <button class="faq-toggle">
-                        <i class="fa fa-angle-down"></i>
-                    </button>
-                </div>
-                <div class="faq">
-                    <h4 class="faq-title">
-                        Lorem ipsum dolor sit amet.
-                    </h4>
-                    <p class="faq-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nobis, repellat neque non dicta
-                fugiat veritatis sit delectus perspiciatis quis?
-                    </p>
-                    <button class="faq-toggle">
-                        <i class="fa fa-angle-down"></i>
-                    </button>
-                </div>
-                
-            </div>
 
-
+            <div class="faq-container" id="faq-container"></div>
+            
             <p class="Form-Title">Get in touch</p>
             <div class="form-container">
                 <form id="myForm">
@@ -177,6 +91,7 @@
                     </div>
                     
                     <input type="submit" value="Submit" name="submit">
+                    
                 </form>
                 
                 <div class="ContactUs">
@@ -184,31 +99,11 @@
                     <p class="sous_title">If you are also a Moroccan enthusiat about mathematics, do not hesitate to join our National Network</p>
                     <div class="mmcsm">
                         <ul>
-                            <li>
-                                <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
-                                    <i class="fa fa-facebook-square circle"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank">
-                                    <i class="fa fa-instagram circle"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank">
-                                    <i class="fa fa-linkedin-square circle"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://api.whatsapp.com/send?phone=212657380193&text=Hello%20MMC%2C%20" target="_blank">
-                                    <i class="fa fa-whatsapp circle"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:moroccan.math@gmail.com" target="_blank">
-                                    <i class="fa fa-envelope circle"></i>
-                                </a>
-                            </li>
+                            <li><a href="https://web.facebook.com/MoroccanMathCom/" target="_blank"><i class="fa fa-facebook-square circle"></i></a></li>
+                            <li><a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank"><i class="fa fa-instagram circle"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank"><i class="fa fa-linkedin-square circle"></i></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=212657380193&text=Hello%20MMC%2C%20" target="_blank"><i class="fa fa-whatsapp circle"></i></a></li>
+                            <li><a href="mailto:moroccan.math@gmail.com" target="_blank"><i class="fa fa-envelope circle"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -218,57 +113,27 @@
             <p class="title_footer">Moroccan Mathematical Community</p>
             <div class="NavLinks">
                 <ul>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="activities.html">Activities</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="current_page">Contact</a>
-                    </li>
-                    <li>
-                        <a href="poles.html">Poles</a>
-                    </li>
-                    <!-- <li>
-                        <a href="research.html">Research</a>
-                    </li> -->
-                    <li>
-                        <a href="team.html">Team</a>
-                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html" class="current_page">Contact</a></li>
+                    <li><a href="poles.html">Poles</a></li>
+                    <li><a href="team.html">Team</a></li>
                 </ul>
             </div>
             <div class="ContatLink">
                 <ul>
-                    <li>
-                        <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
-                            <i class="fa fa-facebook circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank">
-                            <i class="fa fa-instagram circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank">
-                            <i class="fa fa-linkedin circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://api.whatsapp.com/send?phone=212657380193&text=Hello%20MMC%2C%20" target="_blank">
-                            <i class="fa fa-whatsapp circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:moroccan.math@gmail.com" target="_blank">
-                            <i class="fa fa-envelope-o circle"></i>
-                        </a>
-                    </li>
+                    <li><a href="https://web.facebook.com/MoroccanMathCom/" target="_blank"><i class="fa fa-facebook circle"></i></a></li>
+                    <li><a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank"><i class="fa fa-instagram circle"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank"><i class="fa fa-linkedin circle"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=212657380193&text=Hello%20MMC%2C%20" target="_blank"><i class="fa fa-whatsapp circle"></i></a></li>
+                    <li><a href="mailto:moroccan.math@gmail.com" target="_blank"><i class="fa fa-envelope-o circle"></i></a></li>
                 </ul>
             </div>
         </footer>
+
+        <script type="text/javascript" src="../js/faq.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>
+        
         <!--js file-->
     </body>
 </html>
