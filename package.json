@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "MMC Website",
   "scripts": {
-    "test": "parcel serve src/**/*.html"
+    "dev": "parcel serve src/**/*.html"
   },
   "repository": {
     "type": "git",
