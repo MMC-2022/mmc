@@ -2,11 +2,16 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   plugins: [require("daisyui")],
   daisyui: {
-    themes: {
+    themes: [{
       mmcTheme: {
-        "primary": "#0000FF",
-        "background-color": "#0000FF",
-      },
-    },
+            "primary": "#184A54",
+            "secondary": "#FEECD5",
+            "accent": "#FCC877",
+            "neutral": "#FCC877",
+            "base-100": "#184A54",
+            "color": "#FEECD5",
+            "--bc": "#184A54",
+          },
+    },]
   },
 };

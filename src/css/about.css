@@ -1,4 +1,4 @@
-@import url("../backup/backup.css");
+@import url("../base.css");
 
 .html {
    scroll-behavior: smooth;
@@ -6,7 +6,7 @@
 
 body {
    position: relative;
-   background-image: url("../images/2.png");
+   background-image: url("/images/2.png");
    background-repeat: no-repeat;
    background-size: 25%;
    /* to right to bottom*/
