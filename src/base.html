@@ -1,158 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="base.css">
-        <title>Home | Moroccan mathematical community</title>
-        <!--website icon-->
-        <link rel="icon" href="/images/logo/logo 2.png">
-        <!--css file-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+<html data-theme="mmcTheme" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="base.css" />
+    <title>Home | Moroccan mathematical community</title>
+    <!--website icon-->
+    <link rel="icon" href="/images/logo/logo 2.png" />
+    <!--css file-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script> -->
-        <link rel="stylesheet" href="base.css">
-    </head>
-    <body>
-        <header>
-
-            <div class="drawer">
-                <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
-                <div class="drawer-content flex flex-col">
-                  <!-- Navbar -->
-                  <div class="w-full navbar bg-base-300">
-                    <div class="flex-none lg:hidden">
-                      <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                      </label>
-                    </div> 
-                    <div class="flex-1 px-2 mx-2">
-                        <div class="logo">
-                            <a href="./html/home.html">
-                                <img src="/images/logo/logo 2.jpg" alt="logo" class="MMClogo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex-none hidden lg:block">
-                      <ul class="menu menu-horizontal">
-                        <!-- Navbar menu content here -->
-                            <li>
-                                <a href="./html/about.html">About1</a>
-                            </li>
-                            <li>
-                                <a href="./html/activities.html">Activities</a>
-                            </li>
-                            <li>
-                                <a href="./html/contact.html">Contact</a>
-                            </li>
-                            <li>
-                                <a href="./html/poles.html">Poles</a>
-                            </li>
-                            <!-- <li>
-                                <a href="./html/research.html">Research</a>
-                            </li> -->
-                            <li>
-                                <a href="./html/team.html">Team</a>
-                            </li>
-                    </div>
-                  </div>
-                  <!-- Page content here -->
-                  Content
-                </div> 
-                <div class="drawer-side">
-                  <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
-                  <ul class="menu p-4 w-80 min-h-full bg-base-200">
-                    <!-- Sidebar content here -->
-                        <li>
-                            <a href="./html/about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="./html/activities.html">Activities</a>
-                        </li>
-                        <li>
-                            <a href="./html/contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <a href="./html/poles.html">Poles</a>
-                        </li>
-                        <!-- <li>
-                            <a href="./html/research.html">Research</a>
-                        </li> -->
-                        <li>
-                            <a href="./html/team.html">Team</a>
-                        </li>
-                </div>
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <header>
+      <div class="drawer drawer-end">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <!-- Navbar -->
+          <div class="w-full navbar">
+            <div class="flex-none lg:hidden">
+              <label
+                for="my-drawer-3"
+                aria-label="open sidebar"
+                class="btn btn-square btn-ghost"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block w-6 h-6 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </label>
+            </div>
+            <div class="flex-1 px-2 mx-2">
+              <div class="MMClogo">
+                <a href="./html/home.html">
+                  <img
+                    src="/images/logo/logo 2.jpg"
+                    alt="logo"
+                    class="MMClogo"
+                  />
+                </a>
               </div>
-            <!-- <nav id="navigation">
-
-            </nav> -->
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×
-                </span
+            </div>
+            <div class="flex-none hidden lg:block">
+              <ul class="menu menu-horizontal text-lg">
+                <li>
+                  <a href="./html/about.html">About</a>
+                </li>
+                <li>
+                  <a href="./html/activities.html">Activities</a>
+                </li>
+                <li>
+                  <a href="./html/contact.html">Contact</a>
+                </li>
+                <li>
+                  <a href="./html/poles.html">Poles</a>
+                </li>
+                <li>
+                  <a href="./html/team.html">Team</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- content here ig -->
+        <div class="drawer-side">
+          <label
+            for="my-drawer-3"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <ul class="menu p-4 w-80 min-h-full bg-base-200">
+            <li>
+              <a href="./html/about.html">About</a>
+            </li>
+            <li>
+              <a href="./html/activities.html">Activities</a>
+            </li>
+            <li>
+              <a href="./html/contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="./html/poles.html">Poles</a>
+            </li>
+            <li>
+              <a href="./html/team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+          >×
+        </span>
+        <div class="overlay-content">
+          <form method="get" action="">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section></section>
+    <footer class="footer footer-center text-md">
+      <p class="title_footer">Moroccan Mathematical Community</p>
+    </footer>
+    <footer class="text-sm">
+    <div
+      class="flex flex-col text-center justify-around lg:flex-row space-y-2 lg:space-y-0"
+    >
+      <div>
+        <a href="./html/about.html">About</a>
+      </div>
+      <div>
+        <a href="./html/activities.html">Activities</a>
+      </div>
+      <div>
+        <a href="./html/contact.html">Contact</a>
+      </div>
+      <div>
+        <a href="./html/poles.html">Poles</a>
+      </div>
+      <div>
+        <a href="./html/team.html">Team</a>
+      </div>
+    </div>
+    </footer>
+    <br />
+    <footer class="footer footer-center text-lg">
+      <div class="ContatLink flex flex-row space-x-4">
+          <div>
+            <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
+              <i class="fa fa-facebook circle"></i>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1"
+              target="_blank"
             >
-                <div class="overlay-content">
-                    <form method="get" action="">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </header>
-        <section>
-
-        </section>
-        <footer>
-            <p class="title_footer">Moroccan Mathematical Community</p>
-            <div class="NavLinks" id="">
-                <ul>
-                    <li>
-                        <a href="./html/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./html/activities.html">Activities</a>
-                    </li>
-                    <li>
-                        <a href="./html/contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="./html/poles.html">Poles</a>
-                    </li>
-                    <!-- <li>
-                        <a href="./html/research.html">Research</a>
-                    </li> -->
-                    <li>
-                        <a href="./html/team.html">Team</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ContatLink">
-                <ul>
-                    <li>
-                        <a href="https://web.facebook.com/MoroccanMathCom/" target="_blank">
-                            <i class="fa fa-facebook circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/mmc.ma/?igshid=YmMyMTA2M2Y%3D&__coig_restricted=1" target="_blank">
-                            <i class="fa fa-instagram circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/" target="_blank">
-                            <i class="fa fa-linkedin circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="fa fa-twitter circle"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <script type="text/javascript" src="js/script.js"></script>
-        <!--js file-->
+              <i class="fa fa-instagram circle"></i>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/company/moroccan-mathematical-community/mycompany/"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin circle"></i>
+            </a>
+          </div>
+          <div>
+            <a href="#" target="_blank">
+              <i class="fa fa-twitter circle"></i>
+            </a>
+          </div>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--js file-->
+  </body>
 </html>

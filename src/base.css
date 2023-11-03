@@ -15,15 +15,6 @@ html{
     scroll-behavior: smooth;
 }
 
-:root {
-    --principleColor: #184A54;
-    --textColor: #FEECD5;
-    --buttonsColor: #FCC877;
-    /* --textSize: 1.3em;
-    --titleSize: 1.7em; */
-    background-color: var(--principleColor);
-}
-
 /*         scollbar         */
 ::-webkit-scrollbar {
     width: 10px;
@@ -41,10 +32,6 @@ html{
     background: #555;
 }
 
-body {
-    background-color: var(--principleColor);
-}
-
 header {
     display: flex;
     flex-direction: row;
@@ -57,49 +44,13 @@ header {
     width: 90px;
 }
 
-header .menu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*  flex-wrap: wrap; */
-
+header .menu a:hover{
+    @apply bg-primary text-accent;
 }
 
-header .drawer .bg-base-300{
-    background: var(--principleColor);
-    color:var(--textColor);
+.btn {
+    @apply absolute right-0 top-0;
 }
-
-header .horizontal-menu li {
-    /* width: 100%; */
-    list-style: none; 
-    /* margin: 0px 20px; */
-    margin-left: 80px;
-}
-
-header .horizontal-menu a {
-    text-decoration: none;
-    color: var(--textColor);
-    font-weight: 500;
-}
-header .horizontal-menu a:hover{
-    background-color: var(--principleColor);
-    color: var(--buttonsColor);
-}
-header a:hover {
-    text-decoration: none;
-    color: var(--buttonsColor);
-}
-
-header .menu li .btn{
-    padding: 0.4em 2em;
-    border-radius: 50px;
-    border: 0.1em solid var(--buttonsColor);
-    cursor: pointer;
-    color: var(--buttonsColor);
-    margin-left: 20px;
-}
-
 
 /*         search popup          */
 
@@ -174,19 +125,22 @@ header .menu li .btn{
 
 /*          footer          */
 
-footer{
+/* footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: auto;
     margin-bottom: 20px;
     margin: 200px 40px 20px 40px;
-    
+} */
+
+.footer {
+    @apply content-center;
 }
 .title_footer{
     font-weight: 800;
     font-size: 1em;
-    color: var(--buttonsColor);
+    @apply text-accent;
     margin-bottom: 20px;
 
 }
@@ -202,41 +156,34 @@ footer{
 .NavLinks ul li a{
     margin: 0 50px;
     text-decoration: none;
-    color: var(--textColor);
+    @apply text-accent;
     
 }
 footer .ContatLink a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: var(--buttonsColor);
-	margin: 0 30px 20px 0;
-	text-align: center;
+    @apply bg-accent text-primary;
 	line-height: 40px;
 	border-radius: 50%;
-	color: var(--principleColor);
 	transition: all 0.3s ease;
 
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     outline: 1px solid;
     outline-color: rgba(255, 255, 255, .5);
     outline-offset: 0px;
-    text-shadow: none;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 footer .ContatLink a:hover{
-	color: var(--buttonsColor) ;
-	background-color: var(--principleColor) ;
-    border: 0.03em solid var(--buttonsColor);
+    @apply text-accent bg-primary;
+    @apply border-accent border-solid rounded-full;
+    @apply border-2 border-solid;
+    @apply outline-transparent outline-[15px];
 
-    border: 1px solid;
     box-shadow: inset 0 0 20px rgba(156, 139, 93, 0.7), 0 0 20px rgba(156, 139, 93, 0.7);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388; 
 }
-.current_page  {
-   /* font-weight: bold; */
-   color: var(--buttonsColor);
-   /* text-decoration: underline !important; */
-  }
+
+footer i {
+    @apply text-xl;
+}
