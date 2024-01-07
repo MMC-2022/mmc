@@ -1,0 +1,53 @@
+@import url("../backup/backup.css");
+
+.html {
+   scroll-behavior: smooth;
+}
+
+section {
+   margin: 0 100px;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ .back{
+     margin-bottom: 30px;
+     font-size: 1.1em;
+    
+ }
+ .back a{
+     color: var(--textColor);
+     text-decoration: underline;
+ }
+ .back a i{
+     margin-right: 10px;
+     font-weight: 100;
+ }
+
+ .title-pole{
+   color: var(--buttonsColor);
+}
+.pole-desc,.project,.upproject{
+   margin-bottom: 30px;
+   font-size: 0.9em;
+   color: rgb(214, 214, 214);
+}
+.title-proj{
+   color: var(--textColor);
+   text-decoration: underline;
+}
+.description-proj{
+   margin-bottom: 10px;
+}
+.pole-main-desc{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin: 30px 0;
+}
+.pole-main-desc img{
+   width: 200px;
+   /* height: 200px; */
+   margin-right: 20px;
+}

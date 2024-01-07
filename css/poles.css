@@ -15,185 +15,92 @@ body {
 }
 
 section {
-   /* top right botton left */
-   /* margin: 75px 200px 0px 200px; */
-   margin : 0 100px;
+   margin : 0 80px;
 }
 
 .PageTitle {
    text-align: center;
-   margin-bottom: 75px;
+   margin-bottom: 50px;
    font-size: 35px;
    font-weight: bold;
    color: var(--buttonsColor)
 }
 
-.pole-slider {
-   margin-bottom: 20px;
-   position: relative;
 
-}
-
-/* center card */
-.pole-slider .owl-item.center .card-pole {
-   transform: scale(1);
-   opacity: 1;
-   z-index: 3;
-
-}
-
-
-/* seconds ones */
-.card-pole {
-   text-align: center;
-   /* top right bottom left */
-   /* padding: 0.7rem 1.15rem 0.8rem 1.1rem; */
-   padding: 20px;
-   background: white;
-   border-radius: 5% !important;
-   transform: scale(0.8);
-   opacity: 0.4;
-   transition: all 0.3s;
-   background-image: url("../images/2.png"), url("../images/2.png");
-   background-repeat: no-repeat;
-   background-size: 55%;
-   /* to right to top */
-   background-position: 160% -25%;
-   z-index: 2;
-}
-.card-pole a {
-   color: var(--buttonsColor);
-   text-align: center;
-   font-size: 0.5em;
-   font-weight: bold;
-   transition: all 0.3s ease;
-}
-
-.card-pole a:hover {
-   opacity: 0.6;
-}
-
-.imgCard {
-   padding: 20px;
-}
-
-
-
-/* third ones */
-.target1,
-.target2 {
-   transform: scale(0.75) !important;
-   opacity: 0.3;
-   z-index: 1;
-}
-
-.target1 {
-   margin-right: -5px !important;
-   margin-left: 30px;
-}
-
-.target2 {
-   margin-left: -30px !important;
-}
-
-
-
-.poleName {
-   color: var(--principleColor);
-   font-weight: bold;
-   font-size: 0.7rem;
-   margin-top: -10px;
-}
-
-.poleDesc {
-   color: grey;
-   font-size: 0.50rem;
-   padding-bottom: 0.1rem;
-   padding: 0.1rem 0.3rem;
-   margin-top: 5px;
-   margin-bottom: 5px;
-}
-
-
-
-.owl-nav .owl-next {
-   position: absolute;
-   top: calc(40% - 25px);
-   right: 0;
-   opacity: 1;
-   font-size: 2.5rem !important;
-   color: var(--buttonsColor) !important;
-
-   z-index: 1;
-}
-
-.owl-nav .owl-prev {
-   position: absolute;
-   top: calc(40% - 25px);
-   left: 0;
-   opacity: 1;
-   font-size: 2.5rem !important;
-   color: var(--buttonsColor) !important;
-
-   z-index: 1;
-}
-
-.owl-dots {
-   text-align: center !important;
-   margin-top: 10px;
-   /* margin-bottom: 90px; */
-}
-
-.owl-dot {
-   height: 7px !important;
-   width: 7px !important;
-   background-color: white !important;
-   opacity: .8;
-   margin: 0 6px;
-   border-radius: 50%;
-
-}
-
-.owl-dot.active {
-   background-color: var(--buttonsColor) !important;
-   transform: scale(1.6) !important;
-}
-
-
-.pole-desc {
-   margin-top: 100px;
-}
-
-.DescSection {
+.cardContainer{
    display: flex;
-   align-items: center;
-   margin: auto;
+   justify-content: center;
+}
+.card {
+   display: flex;
+   flex-direction: row;
+   width: 48%;
+   height: 220px;
+   border:  none;
+   margin: 1% ;
+   padding: 20px 30px;
+   box-sizing: border-box;
+   float: left;
    border-radius: 10px;
-   padding: 20px 60px;
-   width: 85%;
-   height: 400px;
    background-color: white;
    background-image: url("../images/1.png"), url("../images/1.png"), url("../images/1.png"), url("../images/1.png");
    background-repeat: no-repeat;
    background-size: 75%;
-   /* to right to top */
    background-position: 250% 45%;
-}
+   opacity: 0;
+   transform: translateY(-20px);
+   transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease; ;
+   cursor: pointer;
+ }
+ .card:hover {
+   transform: scale(1.05);
+   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.749); /* Adding box-shadow */
+ }
 
-.DescSection img {
+ @keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translateY(20px);
+   }
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ .card .logo-pole{
    width: 30%;
-   margin-right: 1.5rem;
-   margin-left: -1.5rem;
-   margin-top: 2.5rem;
-}
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .card .card-content{
+   width: 70%;
+   
+ }
+ .logo-pole img{
+   width: 90px;
+   height: 90px;
+ }
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
 
-.DescSection p h3 {
-   float: right;
-}
-
-.DescSection h3 {
-   color: var(--principleColor);
-   margin-bottom: 20px;
-   text-align: center;
-
-}
+ .card.show {
+   opacity: 1;
+   transform: translateX(0);
+ }
+ .card-content h3{
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   height: 35%;
+ }
+ .card-content p{
+   height: 70%;
+   font-size: 0.9em;
+ }
+ .card-content p a{
+   color: var(--buttonsColor);
+ }

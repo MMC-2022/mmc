@@ -1,0 +1,52 @@
+@import url("../backup/backup.css");
+
+section {
+  margin: 0 100px;
+}
+
+a {
+  text-decoration: none;
+}
+.back{
+    margin-bottom: 30px;
+    font-size: 1.1em;
+   
+}
+.back a{
+    color: var(--textColor);
+    text-decoration: underline;
+}
+.back a i{
+    margin-right: 10px;
+    font-weight: 100;
+}
+.activity-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.title-activity{
+    color: var(--buttonsColor);
+}
+.date-activity{
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    color: rgb(214, 214, 214);
+}
+.main-activity .activity-img img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.activity-info{
+    color: #fff;
+    font-weight: 250;
+}
+.error{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    color: var(--buttonsColor);
+    font-weight: bold;
+}

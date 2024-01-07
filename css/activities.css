@@ -57,9 +57,10 @@ body {
 }
 
 
-.activities {
+.card {
+   
    margin: auto;
-   margin-top: 120px;
+   margin-top: 50px;
    border-radius: 10px;
    padding: 20px 60px;
    width: 85%;
@@ -72,11 +73,11 @@ body {
 }
 
 
-
+   
 .DescSection {
 
    display: flex;
-   align-items: center;
+   /* align-items: center; */
    padding: 10px;
 }
 
@@ -94,9 +95,8 @@ body {
   
 }
 .title {
-   font-size: 20px;
-   /* margin-bottom: 10px; */
-   font-weight: bold;
+   font-size: 25px;
+   font-weight: 700;
 }
 .date {
    
@@ -110,4 +110,7 @@ body {
 }
 .Desc2{
    font-size: 12px;
+}
+.more-info-link{
+   color: var(--buttonsColor);
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "index": 0,
+        "title": "MMC research published",
+        "date": "13 march 2022",
+        "image":["../images/community.jpg","../images/community.jpg"],
+        "description": "The education department plays a vital role in promoting excellence in mathematics. Firstly, the department focuses on training young students in mathematics and its applications from an early age by providing both online and in-person courses, as well as organizing mathematics olympiads. Secondly, the department helps apply mathematical concepts to real-life projects through hands-on workshops, practical exercises, peer mentoring, and certification training. In addition, the department also provides academic guidance and mentorship to students, helping them navigate their academic journeys. Finally, the department excels in mathematics and its applications through cutting-edge research, and book and magazine publications. Overall, the research and education department is committed to enhancing students' understanding and application of mathematics..."
+    },
+    {
+        "index": 1,
+        "title": "Other activity",
+        "date": "11 march 2022",
+        "image":["../images/community.jpg"],
+        "description": "The education department plays a vital role in promoting excellence in mathematics. Firstly, the department focuses on training young students in mathematics and its applications from an early age by providing both online and in-person courses, as well as organizing mathematics olympiads. Secondly, the department helps apply mathematical concepts to real-life projects through hands-on workshops, practical exercises, peer mentoring, and certification training. In addition, the department also provides academic guidance and mentorship to students, helping them navigate their academic journeys. Finally, the department excels in mathematics and its applications through cutting-edge research, and book and magazine publications. Overall, the research and education department is committed to enhancing students' understanding and application of mathematics..."
+    }
+  ]
+  

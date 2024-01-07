@@ -74,7 +74,7 @@ $(document).ready(function () {
             var title;
             var desc1, desc2, desc3;
             var img;
-            switch (activeIndex) {
+            switch (activeIndex) {  
                 case 5:
                     title = "Pole research and education";
                     desc1 = "Research and Education pole has two departments: the research department and the education department."

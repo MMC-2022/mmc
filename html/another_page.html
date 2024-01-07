@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Another Page</title>
+</head>
+<body>
+  <div class="activity-details">
+    <h2 id="activity-title"></h2>
+    <p id="activity-date"></p>
+    <p id="activity-description"></p>
+  </div>
+
+  <script>
+    // Function to retrieve query parameters from URL
+    function getQueryParams() {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      return Object.fromEntries(urlParams.entries());
+    }
+
+    // Function to populate elements with activity details
+    function fillActivityDetails() {
+      const queryParams = getQueryParams();
+      const titleElement = document.getElementById('activity-title');
+      const dateElement = document.getElementById('activity-date');
+      const descriptionElement = document.getElementById('activity-description');
+
+      if (queryParams.title && queryParams.date && queryParams.description) {
+        titleElement.textContent = decodeURIComponent(queryParams.title);
+        dateElement.textContent = decodeURIComponent(queryParams.date);
+        descriptionElement.textContent = decodeURIComponent(queryParams.description);
+      } else {
+        // Handle missing parameters or show an error message
+        titleElement.textContent = "Activity Details Not Found";
+      }
+    }
+
+    // Call the function to fill activity details when the page loads
+    window.onload = fillActivityDetails;
+  </script>
+</body>
+</html>
