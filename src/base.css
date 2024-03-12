@@ -39,6 +39,10 @@ header {
     margin: 30px 50px;
 }
 
+.drawer-end .drawer-toggle ~ .drawer-side > :not(.drawer-overlay) {
+    @apply bg-secondary;
+    @apply text-primary;
+}
 
 .MMClogo {
     width: 90px;
