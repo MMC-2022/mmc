@@ -25,8 +25,37 @@ buttons.forEach((button) => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const text =
+      "Open Mathematical Community: Fostering an Active, Inventive, and Creative Moroccan Society."
+    const typedTextSpan = document.getElementById("typed-text")
+    const cursorSpan = document.querySelector(".cursor")
+  
+    let i = 0
+    const typingSpeed = 50 // Adjust typing speed here (lower is faster)
+  
+    function type() {
+      if (i < text.length) {
+        typedTextSpan.textContent += text.charAt(i)
+        i++
+        setTimeout(type, typingSpeed)
+      } else {
+        cursorSpan.style.display = "none"
+      }
+    }
+  
+    if (typedTextSpan) {
+      type()
+    }
+  })
+  
+  const header = document.querySelector('header')
 
-
+window.addEventListener('scroll',function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 10);
+    header.style.transitionDuration = "0.3s";
+});
 
 
 //OwlCarousel

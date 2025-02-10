@@ -6,13 +6,14 @@
 
 body {
    position: relative;
-   background-image: url("../images/2.png");
-   background-repeat: no-repeat;
-   background-size: 25%;
-   /* to right to bottom*/
-   background-position: -17% 121%;
-   overflow-x: hidden;
-}
+   background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.832), rgba(0, 0, 0, 0.747)), url("../images/artisanat-au-Maroc2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    /* min-height: 200vh; */
+   /* background-position: 100% 100%; */
+    overflow-x: hidden;
+   }
 
 .Page_Title ,.actitle{
    text-align: center;
@@ -20,6 +21,13 @@ body {
    font-size: 35px;
    font-weight: bold;
    color: var(--buttonsColor)
+}
+.Title{
+   text-align: center;
+   margin-bottom: 35px;
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--textColor)
 }
 
 .actitle{
@@ -58,7 +66,6 @@ body {
 
 
 .card {
-   
    margin: auto;
    margin-top: 50px;
    border-radius: 10px;
@@ -113,4 +120,93 @@ body {
 }
 .more-info-link{
    color: var(--buttonsColor);
+}
+.button_container{
+   
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   align-items: center;
+   flex-direction: column;
+}
+
+.button_act{
+   text-decoration: none;
+   padding: 0.5em 4em;
+   border-radius: 10px;
+   font-weight: 600;
+   text-transform: uppercase;
+   background-color: var(--buttonsColor);
+   color: var(--principleColor);
+   margin-right: 20px;
+
+   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+   outline: 1px solid;
+   outline-color: rgba(255, 255, 255, .5);
+   outline-offset: 0px;
+   text-shadow: none;
+   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.button_act:hover{
+
+   border: 1px solid;
+   box-shadow: inset 0 0 20px rgba(156, 139, 93, 0.7), 0 0 20px rgba(255, 255, 255, .2);
+   outline-color: rgba(255, 255, 255, 0);
+   outline-offset: 15px;
+   /* text-shadow: 1px 1px 2px #427388;  */
+}
+@media screen and (max-width: 900px) {
+   .activities_type {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+      width: 100%;
+   }
+   .item {
+      /* padding-right: 4%;
+      padding-left: 4%; */
+      width: 90%;
+      margin-left: 3%;
+      margin-right: 3%;
+      margin-bottom: 30px;
+   }
+   .item img {
+
+      margin-bottom: 10px;
+   }
+   .DescSection {
+
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      padding: 10px;
+   }
+   .card {
+      text-align: center;
+   }
+   
+   .Des{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .DescSection img {
+      display: none;
+      /* width: 35%; */
+      margin-right: 1.5rem;
+      margin-left: -1.5rem;
+     
+   }
+   .title {
+      font-size: 15px;
+
+   }
+   .date { 
+      align-items: center;
+      font-size: 10px;
+
+   }
 }

@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function() {
         data.forEach((card, index) => {
           const cardElement = document.createElement("div");
           cardElement.classList.add("card");
-            
-          const truncatedContent = card.description.length > 180 ? card.description.slice(0, 180) + '...' : card.description;
+
+          cardElement.classList.add(card.class);
+
+          const truncatedContent =  card.description;
         
           cardElement.innerHTML = `
-          <div class="logo-pole">
-            <img src="${card.image}" alt="">
-          </div>
+          
           <div class="card-content">
             <h3>${card.name}</h3>
-            <p>${truncatedContent} <a href="pole.html?index=${card.index}" class="see-more">See more</a></p>
+            <p>${truncatedContent} <a href="pole.html?index=${card.index}"</p>
           </div>
         `;
 
@@ -31,3 +31,22 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error('Error fetching data:', error);
       });
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const cards = document.querySelectorAll('.bureau-member-card');
+    let currentIndex = 0;
+
+    function slideCarousel() {
+        currentIndex++;
+        if (currentIndex > cards.length - 3) {
+            currentIndex = 0;
+        }
+        const offset = -currentIndex * (cards[0].offsetWidth + 20);
+        track.style.transform = `translateX(${offset}px)`;
+    }
+
+    // Start automatic sliding
+    setInterval(slideCarousel, 3000); // Change slide every 3 seconds
+});
