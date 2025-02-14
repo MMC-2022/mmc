@@ -3,7 +3,7 @@
         "index": 0,
         "name": "Media Committee", 
         "description": "Responsible for branding, content creation, and managing MMC’s online presence through engaging promotional materials and social media strategies.",
-        "image":["../images/poles/it.png"],
+        "image":["../images/structure/it.png"],
         "class":"np"
         
     },
@@ -11,7 +11,7 @@
         "index": 1,
         "name": "Public Relations (PR) Committee", 
         "description": "Focuses on building strong relationships with stakeholders by coordinating partnerships and organizing impactful public events.",
-        "image":["../images/poles/education.png"],
+        "image":["../images/structure/education.png"],
         "class":"np"
     }
     ,
@@ -19,21 +19,21 @@
         "index": 2,
         "name": "Digital Committee",
         "description": "Dedicated to technological innovation, ensuring the development, security, and maintenance of MMC’s digital infrastructure.",
-        "image":["../images/poles/education.png"],
+        "image":["../images/structure/education.png"],
         "class":"np"
     },
     {
         "index": 3,
         "name": "Logistics Committee", 
         "description": "Manages the operational aspects of MMC, overseeing event logistics, resource allocation, and transportation for seamless project execution.",
-        "image":["../images/poles/sponsoring.png"],
+        "image":["../images/structure/sponsoring.png"],
         "class":"np"
     },
     {
         "index": 4,
         "name": "Project Committees", 
         "description": "Each project within MMC has its own dedicated committee that collaborates closely with the permanent committees to ensure the project’s success through continuous planning and execution.",
-        "image":["../images/poles/sponsoring.png"],
+        "image":["../images/structure/sponsoring.png"],
         "class":"project"
     }
     

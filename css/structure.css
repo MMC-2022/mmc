@@ -121,7 +121,11 @@ section {
   overflow: hidden;
   margin: 0 auto 30px auto;
 }
-
+.carousel {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+}
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
@@ -238,3 +242,13 @@ section {
     color: var(--buttonsColor);
   }
  }
+
+.slide-btn {
+  color: var(--buttonsColor);
+  font-size: 40pt;
+  cursor: pointer;
+}
+
+.slide-btn:hover{
+  text-shadow: var(--buttonsColor);
+}

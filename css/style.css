@@ -5,7 +5,7 @@ body {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.747)), url("../images/bgimg.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.63)), url("../images/bgimg.jpeg");
     /* background-position: center; */
     /* background-attachment: fixed; */
     /* min-height: 200vh; */

@@ -4,7 +4,7 @@ function getQueryParam(name) {
   }
 
 const indexFromURL = getQueryParam('index');
-fetch('../js/poles.json')
+fetch('../js/structure.json')
 .then(response => {
   if (!response.ok) {
     throw new Error('Network response was not ok.');
